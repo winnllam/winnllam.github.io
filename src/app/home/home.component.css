@@ -1,0 +1,85 @@
+/* TITLE */
+#title {
+  min-height: 100%;
+}
+
+#position {
+  font-family: Staatliches;
+  font-size: 30px;
+  text-align: center;
+  color: #fff0a8;
+}
+
+#backdrop {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* SMALL BLURB */
+.content {
+  padding: 50px;
+  margin: 0 auto -50px;
+}
+
+/* SECTIONS */
+.content-wrap {
+  max-width: 875px;
+  margin: 35px auto;
+  overflow: auto;
+  display: block;
+}
+
+#about {
+  max-width: 980px;
+  margin: 35px auto;
+  overflow: auto;
+}
+
+#me {
+  width: 350px;
+  border-radius: 50%;
+  float: left;
+}
+
+#info {
+  width: 600px;
+  float: right;
+}
+
+/* OVERVIEW */
+.box {
+  width: 700px;
+  color: white;
+  background: rgb(151, 151, 151);
+  position: relative;
+  padding: 30px;
+  margin: 35px auto;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  float: right;
+}
+
+.box:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #a9a9a9;
+  border-bottom: 13px solid transparent;
+}
+
+.bubble-icons {
+  width: 125px;
+  margin-right: 0;
+  float: left;
+  transition: 0.5s;
+}
+
+.bubble-icons:hover {
+  width: 137px;
+}

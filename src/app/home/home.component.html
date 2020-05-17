@@ -1,0 +1,160 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+  p {
+    margin: 8px;
+  }
+
+  .white {
+    color: white;
+  }
+</style>
+
+<router-outlet></router-outlet>
+
+<div style="position: relative;">
+  <section id="title">
+    <img id="backdrop" src="../assets/headers/title.jpg" alt="bg" />
+  </section>
+  <div
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    "
+  >
+    <section id="body">
+      <h4 style="margin: 0;">
+        {{ title }}
+      </h4>
+      <p id="position">{{ position }}</p>
+    </section>
+  </div>
+</div>
+
+<div class="content" id="welcome" style="text-align: center;">
+  <h2>Welcome</h2>
+  <br />
+  <p>
+    {{ slogan }}
+  </p>
+  <p>Contact information in the footer and Contact tab.</p>
+</div>
+<br />
+
+<div data-aos="fade-right" id="about">
+  <img
+    id="me"
+    [src]="'../assets/self/win' + imageNum + '.jpg'"
+    class="img-thumbnail img-fluid float-left"
+    alt="Winnie"
+    onContextMenu="return false;"
+  />
+
+  <div id="info" style="padding: 2%; margin: 10px;">
+    <h2 style="font-size: 45px;">Hi, it's Winnie!</h2>
+    <br />
+    <p>
+      I am currently attending <b>University of Toronto</b>, program for
+      <i>Specialist Computer Science - Software Engineering Stream</i>. My
+      interest in computer science started in grade 10. Now, I have 4 years of
+      experience and knowledge of multiple programming languages under my belt.
+    </p>
+    <p>
+      I have also volunteered for various STEM related roles for students
+      interested in pursuing the field in their future. Currently, I am a
+      student ambassador campus tour guide and a WiCSM mentor, and was
+      previously a teaching assistant.
+    </p>
+    <p>
+      Previously, I have done a workterm at RBC Royal Bank as Developer Co-op on
+      the Innovation Team. Currently, I am a Front-End Developer for LIVE
+      Competition.
+    </p>
+    <p>Currently seeking Fall 2020 internships/co-op positions.</p>
+    <br />
+  </div>
+</div>
+
+<div data-aos="fade-left" class="content-wrap" id="resume">
+  <br />
+  <h2>Quick Overview...</h2>
+  <br />
+  <a routerLink="/resume"
+    ><img class="bubble-icons" src="../assets/icons/resume.png"
+  /></a>
+  <div class="box">
+    <h2 class="white">Résumé</h2>
+    <br />
+    <div *ngFor="let exp of resume">
+      <p>
+        <b>{{ exp.role }}</b
+        >, {{ exp.company }}
+      </p>
+      <p>
+        <i>{{ exp.duration }}</i>
+      </p>
+      <br />
+    </div>
+
+    <p>
+      <a
+        href="https://drive.google.com/open?id=1FO4ty81THO92dGWc4gBToEf70l2ZW55Y"
+        target="_blank"
+        >Resume Link</a
+      >
+    </p>
+  </div>
+</div>
+
+<div data-aos="fade-right" class="content-wrap" id="projects">
+  <a routerLink="/project"
+    ><img class="bubble-icons" src="../assets/icons/project.png"
+  /></a>
+  <div class="box">
+    <h2 class="white">Projects</h2>
+    <br />
+    <p><b>Recently:</b></p>
+    <div *ngFor="let proj of project">
+      <p>
+        <i>{{ proj.name }}</i
+        >, {{ proj.oneLiner }}
+      </p>
+      <ul>
+        <li>
+          {{ proj.pointOne }}
+        </li>
+        <li>
+          {{ proj.pointTwo }}
+        </li>
+      </ul>
+      <br />
+    </div>
+  </div>
+</div>
+
+<div data-aos="fade-left" class="content-wrap" id="activity">
+  <a routerLink="/activities"
+    ><img class="bubble-icons" src="../assets/icons/collective.png"
+  /></a>
+  <div class="box">
+    <h2 class="white">Activities</h2>
+    <br />
+    <p><b>Presently:</b></p>
+    <div *ngFor="let act of activity">
+      <p>
+        <i>{{ act.role }}</i>
+      </p>
+      <ul>
+        <li>
+          {{ act.pointOne }}
+        </li>
+        <li>
+          {{ act.pointTwo }}
+        </li>
+      </ul>
+      <br />
+    </div>
+  </div>
+</div>

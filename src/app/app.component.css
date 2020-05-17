@@ -1,0 +1,17 @@
+footer {
+  clear: both;
+  padding: 10px;
+  text-align: center;
+}
+
+/* FOOTER ICONS */
+.icons {
+  font-size: 30px;
+  margin: 5px;
+  color: black;
+  transition: color 0.5s;
+}
+
+.icons:hover {
+  color: #a07276;
+}
