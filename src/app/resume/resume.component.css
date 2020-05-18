@@ -1,0 +1,35 @@
+/* RESUME INFO */
+.resume {
+  margin: 20px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+#resume-format {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#resume-sections {
+  width: 65%;
+  margin: 70px;
+}
+
+.skill-card {
+  margin: auto;
+}
+
+#skills {
+  margin: auto;
+}
+
+#title {
+  height: 600px;
+}
+
+#header {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

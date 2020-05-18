@@ -1,1 +1,126 @@
-<p>resume works!</p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+  @font-face {
+    font-family: Raleway;
+    src: url("../../assets/fonts/Raleway/Raleway-Regular.ttf");
+  }
+
+  h2 {
+    color: #4caf50;
+    font-family: Raleway;
+    font-size: 30px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .card {
+    margin-top: 20px;
+    width: 200px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+</style>
+
+<router-outlet></router-outlet>
+
+<div style="position: relative;">
+  <section id="title">
+    <img id="header" src="../../assets/headers/resume.jpg" alt="header" />
+  </section>
+  <div
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    "
+  >
+    <section id="body">
+      <h1>RÉSUMÉ</h1>
+    </section>
+  </div>
+</div>
+
+<div id="resume-format">
+  <div id="resume-sections">
+    <h2 style="display: inline;">OBJECTIVE</h2>
+    <div class="resume">
+      <p>
+        As an aspiring computer science student, I wish to use my skill set to
+        help others. Although not exposed to the industry in depth, I believe
+        that my passions, skills, and abilities can help make a difference.
+      </p>
+    </div>
+
+    <h2 style="display: inline;">EDUCATION</h2>
+    <div class="resume">
+      <p>University of Toronto (2018 - Present)</p>
+      <p><b>Honours Bachelor of Science</b></p>
+      <p>
+        Specialist (Co-operative) Program in Computer Science - Software
+        Engineering Stream, {{ year }} Year
+      </p>
+      <p><i>cGPA:</i> {{ cgpa }}/4.0</p>
+      <br />
+      <p><i>Awards: </i></p>
+      <ul>
+        <li>Dean's List (October 2019)</li>
+        <li>University of Toronto Entrance Scholarship (2018)</li>
+      </ul>
+    </div>
+
+    <h2 style="display: inline;">EXPERIENCE</h2>
+    <div class="resume">
+      <div *ngFor="let exp of experience">
+        <p>
+          <b>{{ exp.role }}</b
+          >, {{ exp.company }}
+        </p>
+        <p>
+          <i>{{ exp.duration }}</i>
+        </p>
+        <ul>
+          <li *ngFor="let bullet of exp.details">
+            {{ bullet }}
+          </li>
+        </ul>
+        <br />
+      </div>
+    </div>
+
+    <h2 style="display: inline;">PROJECTS AND EXTRA-CURRICULARS</h2>
+    <div class="resume">
+      <p>
+        <i>
+          More details about projects and extra-curriculars can be seen in the
+          projects tab and activities tab!
+        </i>
+      </p>
+      <p>
+        <a
+          href="https://drive.google.com/open?id=1FO4ty81THO92dGWc4gBToEf70l2ZW55Y"
+          target="_blank"
+          >Resume Link</a
+        >
+      </p>
+    </div>
+  </div>
+  <br />
+
+  <div id="skills">
+    <div *ngFor="let skill of skills" class="card skill-card">
+      <div class="card-header">{{ skill.category }}</div>
+      <div class="card-body">
+        <p *ngFor="let item of skill.sub" class="card-text">
+          {{ item }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

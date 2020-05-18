@@ -122,11 +122,8 @@
         >, {{ proj.oneLiner }}
       </p>
       <ul>
-        <li>
-          {{ proj.pointOne }}
-        </li>
-        <li>
-          {{ proj.pointTwo }}
+        <li *ngFor="let bullet of proj.bullets">
+          {{ bullet }}
         </li>
       </ul>
       <br />
@@ -147,11 +144,8 @@
         <i>{{ act.role }}</i>
       </p>
       <ul>
-        <li>
-          {{ act.pointOne }}
-        </li>
-        <li>
-          {{ act.pointTwo }}
+        <li *ngFor="let bullet of act.bullets">
+          {{ bullet }}
         </li>
       </ul>
       <br />
