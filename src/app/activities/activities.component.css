@@ -1,0 +1,148 @@
+/* HEADER */
+#title {
+  height: 600px;
+}
+
+#header {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*ACTIVITY BOXES*/
+#activity-cards {
+  margin: 20px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.evtbox {
+  /* event boxes */
+  width: 100%;
+  height: auto;
+  flex: 0 1 29%;
+  margin: 20px;
+  padding: 10px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  background-color: white;
+  text-align: center;
+  overflow: auto;
+  display: inline-block;
+}
+
+.eicon {
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+  align-items: center;
+}
+
+.expand {
+  /* button */
+  background-color: white;
+  color: black;
+  border: 2px solid #a07276;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.expand:hover {
+  background-color: #a07276;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 75px;
+  margin-bottom: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 3px;
+  width: 900px;
+  height: 650px;
+}
+
+.position-desc {
+  overflow: auto;
+}
+
+.imgbox {
+  overflow: auto;
+}
+
+.imgleft {
+  /*modal images*/
+  float: left;
+  height: auto;
+  width: 49%;
+  margin-bottom: 10px;
+}
+
+.imgright {
+  float: right;
+  height: auto;
+  width: 49%;
+  margin-bottom: 10px;
+}
+
+/*close*/
+.close-container {
+  position: absolute;
+  top: 20px;
+  right: -15px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.leftright {
+  height: 2px;
+  width: 25px;
+  position: absolute;
+  background-color: #f4a259;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 2px;
+  width: 25px;
+  position: absolute;
+  background-color: #f4a259;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+.close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #f25c66;
+}
+
+.close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #f25c66;
+}
+
+.close-container:hover label {
+  opacity: 1;
+}

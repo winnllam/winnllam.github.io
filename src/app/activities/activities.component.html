@@ -1,0 +1,67 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<div style="position: relative;">
+  <section id="title">
+    <img id="header" src="../../assets/headers/activities.jpg" alt="header" />
+  </section>
+  <div
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    "
+  >
+    <section id="body">
+      <h1>ACTIVITIES</h1>
+    </section>
+  </div>
+</div>
+
+<div id="activity-cards">
+  <div *ngFor="let card of cards" class="card evtbox">
+    <img
+      class="eicon"
+      src="../../assets/events/logo/{{ card.logo }}"
+      alt="evt"
+    />
+    <div>
+      <button
+        (click)="openModal(card.id)"
+        class="expand"
+        attr.data-modal="{{ card.id }}"
+      >
+        Expand
+      </button>
+    </div>
+  </div>
+
+  <div *ngFor="let card of cards" id="{{ card.id }}" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>{{ card.title }}</h2>
+      </div>
+
+      <div (click)="closeModal(card.id)" class="close-container">
+        <div class="leftright"></div>
+        <div class="rightleft"></div>
+      </div>
+
+      <div class="modal-body position-desc">
+        <h3>{{ card.duration }}</h3>
+        <h3>
+          Position: <i>{{ card.position }}</i>
+        </h3>
+        <div *ngIf="card.images.length != 0" class="imgbox">
+          <img
+            *ngFor="let img of card.images"
+            class="{{ img.position }}"
+            src="../../assets/events/{{ img.src }}"
+          />
+        </div>
+
+        <p *ngFor="let p of card.desc">{{ p }}</p>
+      </div>
+    </div>
+  </div>
+</div>
