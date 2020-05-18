@@ -1,0 +1,138 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+  p {
+    font-size: 17px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .card {
+    display: block;
+  }
+</style>
+
+<div style="position: relative;">
+  <section id="title">
+    <img id="header" src="../../assets/headers/projects.jpg" alt="header" />
+  </section>
+  <div
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    "
+  >
+    <section id="body">
+      <h1>PROJECTS</h1>
+    </section>
+  </div>
+</div>
+<br />
+
+<h2 id="featured" style="text-align: center;">Featured</h2>
+<div id="featureFrame">
+  <div *ngFor="let project of featured" class="card featureBox">
+    <img
+      src="../../assets/project_images/logo/{{ project.id }}.png"
+      class="card-img-top"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <p class="card-text">
+        {{ project.oneLiner }}
+      </p>
+      <a
+        *ngFor="let link of project.link"
+        href="{{ link.url }}"
+        target="_blank"
+        class="btn btn-light"
+        >{{ link.site }}</a
+      >
+    </div>
+  </div>
+</div>
+
+<div id="tagframe">
+  <div *ngFor="let tag of tags" class="tagbox">
+    <h3 style="display: inline-block;">{{ tag.category }}:</h3>
+    <button
+      *ngFor="let btn of tag.tags"
+      class="tags"
+      id="{{ btn.id }}"
+      (click)="filter(btn.id)"
+    >
+      {{ btn.tag }}
+    </button>
+  </div>
+
+  <div class="tagbox" style="display: block;">
+    <button class="tags" id="clear" (click)="filter('clear')">
+      View All
+    </button>
+  </div>
+</div>
+
+<div class="projbox">
+  <div class="accordion" id="acc">
+    <div
+      *ngFor="let project of projects"
+      class="card projacc {{ project.tags.join(' ') }}"
+    >
+      <div @InsertRemoveTrigger *ngIf="project.shown" class="card-header">
+        <h5>
+          <button
+            type="button"
+            class="btn btn-link collapsed"
+            data-toggle="collapse"
+            attr.data-target="#collapse{{ project.number }}"
+          >
+            <fa-icon [icon]="faPlus"></fa-icon> {{ project.title }}
+          </button>
+        </h5>
+      </div>
+      <div
+        id="collapse{{ project.number }}"
+        class="collapse"
+        data-parent="#acc"
+      >
+        <div class="card-body">
+          <div class="projimg">
+            <img
+              *ngFor="let img of project.images"
+              class="pimages"
+              src="../../assets/project_images/projects/{{ img }}.png"
+            />
+          </div>
+          <div class="card-desc">
+            <h2>{{ project.name }}</h2>
+            <h3>
+              <b>Status: </b>{{ project.status }} ({{ project.duration }})
+            </h3>
+
+            <p>
+              <i>{{ project.oneLiner }}</i>
+            </p>
+
+            <p><i>Technologies:</i> {{ project.tech }}</p>
+
+            <p *ngFor="let p of project.desc">{{ p }}</p>
+
+            <p *ngIf="project.resources.length != 0">
+              <i>Resources: </i>
+              <a *ngFor="let link of project.resources" href="{{ link.link }}">
+                {{ link.title }},
+              </a>
+            </p>
+            <a *ngIf="project.url" href="{{ project.url }}" target="_blank">
+              <button class="linkproj">Link to Project</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
