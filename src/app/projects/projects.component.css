@@ -127,3 +127,24 @@
   background-color: #a07276;
   color: white;
 }
+
+/* MEDIA QUERIES */
+.card-desc1 {
+  width: 100%;
+  height: auto;
+  float: none;
+  clear: right;
+}
+
+.projimg1 {
+  width: 100%;
+  height: auto;
+  float: none;
+  clear: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content1 {
+  width: 92%;
+}

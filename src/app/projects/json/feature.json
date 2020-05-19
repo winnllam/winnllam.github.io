@@ -1,0 +1,39 @@
+[
+  {
+    "id": "chatbotbox",
+    "title": "Chat Bot Box",
+    "oneLiner": "A chat box UI for a Dialogflow agent.",
+    "link": [
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/chatbotbox"
+      }
+    ]
+  },
+  {
+    "id": "just-peachy",
+    "title": "Just-Peachy",
+    "oneLiner": "A website gallery to display different page designs with multi-purposes.",
+    "link": [
+      {
+        "site": "Website",
+        "url": "https://winnllam.github.io/just-peachy"
+      },
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/chatbotbox"
+      }
+    ]
+  },
+  {
+    "id": "pineapple",
+    "title": "Pineapple",
+    "oneLiner": "An eCommerce mobile android application selling pineapples.",
+    "link": [
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/pineapple"
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Streamline",
+    "oneLiner": "an app that makes the process easier for international students",
+    "bullets": [
+      "Won 3rd place for RBC Innovation Challenge in a team with 4 fellow co-ops",
+      "Built an application that streamlines the experience for international students coming to Canada with a currency converter widget, step-by-step guide for permits, and map marking and locating"
+    ]
+  },
+  {
+    "name": "Chat Bot Box",
+    "oneLiner": "a Chat Box with Dialogflow Agents",
+    "bullets": [
+      "Developed a chat box UI to enable users to chat with agents outside of the Dialogflow console",
+      "Retrieved responses from Dialogflow API for a complete conversation flow"
+    ]
+  },
+  {
+    "name": "Pineapple",
+    "oneLiner": "an eCommerce Android Application",
+    "bullets": [
+      "An eCommerce android application using Java, SQLite, and Android Studio",
+      "Stores and retrieves purchases and accounts for each user, and displayed the app’s shopping and cart content in a lucid and user-friendly manner"
+    ]
+  }
+]

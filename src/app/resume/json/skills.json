@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Languages",
+    "sub": [
+      "Java",
+      "HTML/CSS",
+      "JavaScript/TypeScript",
+      "Python",
+      "C",
+      "Shell Scripting",
+      "SQL",
+      "Ruby"
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "sub": ["Bootstrap", "React", "Angular", "Vue.js", "Ruby on Rails"]
+  },
+  {
+    "category": "Database",
+    "sub": ["SQLite", "MySQL"]
+  },
+  {
+    "category": "Code Management",
+    "sub": ["Git/GitHub", "subversion (SVN)"]
+  },
+  {
+    "category": "Software/Tools",
+    "sub": ["Microsoft Office", "Node.js", "JSON", "Android Studio", "Jira"]
+  },
+  {
+    "category": "Soft Skills",
+    "sub": [
+      "Communication",
+      "Collaboration",
+      "Leadership",
+      "Problem Solving",
+      "Organization",
+      "Mentorship"
+    ]
+  }
+]

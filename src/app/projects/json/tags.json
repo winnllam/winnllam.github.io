@@ -1,0 +1,61 @@
+[
+  {
+    "category": "Language",
+    "tags": [
+      {
+        "id": "java",
+        "tag": "Java"
+      },
+      {
+        "id": "htmlcss",
+        "tag": "HTML/CSS"
+      },
+      {
+        "id": "js",
+        "tag": "JavaScript"
+      },
+      {
+        "id": "ts",
+        "tag": "TypeScript"
+      },
+      {
+        "id": "ruby",
+        "tag": "Ruby"
+      }
+    ]
+  },
+  {
+    "category": "Type",
+    "tags": [
+      {
+        "id": "android",
+        "tag": "Android App"
+      },
+      {
+        "id": "webapp",
+        "tag": "Web App"
+      },
+      {
+        "id": "website",
+        "tag": "Website"
+      }
+    ]
+  },
+  {
+    "category": "Framework",
+    "tags": [
+      {
+        "id": "react",
+        "tag": "React"
+      },
+      {
+        "id": "androidsdk",
+        "tag": "Android SDK"
+      },
+      {
+        "id": "rails",
+        "tag": "Ruby on Rails"
+      }
+    ]
+  }
+]
