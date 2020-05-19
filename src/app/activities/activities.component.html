@@ -2,7 +2,7 @@
 
 <div style="position: relative;">
   <section id="title">
-    <img id="header" src="../../assets/headers/activities.jpg" alt="header" />
+    <img id="header" src="assets/headers/activities.jpg" alt="header" />
   </section>
   <div
     style="
@@ -20,11 +20,7 @@
 
 <div id="activity-cards">
   <div *ngFor="let card of cards" class="card evtbox">
-    <img
-      class="eicon"
-      src="../../assets/events/logo/{{ card.logo }}"
-      alt="evt"
-    />
+    <img class="eicon" src="assets/events/logo/{{ card.logo }}" alt="evt" />
     <div>
       <button
         (click)="openModal(card.id)"
@@ -56,7 +52,7 @@
           <img
             *ngFor="let img of card.images"
             class="{{ img.position }}"
-            src="../../assets/events/{{ img.src }}"
+            src="assets/events/{{ img.src }}"
           />
         </div>
 

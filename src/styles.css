@@ -1,17 +1,17 @@
 /* FONT IMPORTS */
 @font-face {
   font-family: Comfortaa;
-  src: url("/assets/fonts/Comfortaa/Comfortaa.ttf");
+  src: url("assets/fonts/Comfortaa/Comfortaa.ttf");
 }
 
 @font-face {
   font-family: OpenSansCondensed;
-  src: url("/assets/fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
+  src: url("assets/fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
 }
 
 @font-face {
   font-family: Staatliches;
-  src: url("/assets/fonts/Staatliches/Staatliches-Regular.ttf");
+  src: url("assets/fonts/Staatliches/Staatliches-Regular.ttf");
 }
 
 /* TAGS */

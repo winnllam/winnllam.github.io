@@ -16,7 +16,7 @@
 
 <div style="position: relative;">
   <section id="title">
-    <img id="header" src="../../assets/headers/projects.jpg" alt="header" />
+    <img id="header" src="assets/headers/projects.jpg" alt="header" />
   </section>
   <div
     style="
@@ -37,7 +37,7 @@
 <div id="featureFrame">
   <div *ngFor="let project of featured" class="card featureBox">
     <img
-      src="../../assets/project_images/logo/{{ project.id }}.png"
+      src="assets/project_images/logo/{{ project.id }}.png"
       class="card-img-top"
     />
     <div class="card-body">
@@ -104,7 +104,7 @@
             <img
               *ngFor="let img of project.images"
               class="pimages"
-              src="../../assets/project_images/projects/{{ img }}.png"
+              src="assets/project_images/projects/{{ img }}.png"
             />
           </div>
           <div class="card-desc">
