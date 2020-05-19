@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,6 +12,7 @@ import activity from './json/activity.json';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  innerHeight: number;
   resume: object;
   project: object;
   activity: object;
@@ -28,7 +29,21 @@ export class HomeComponent implements OnInit {
     this.activity = activity;
   }
 
+  setTitleHeight() {
+    this.innerHeight = window.innerHeight;
+
+    var el = document.getElementById('title');
+    el.style.height = this.innerHeight + 'px';
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.setTitleHeight();
+  }
+
   ngOnInit() {
+    this.setTitleHeight();
+
     AOS.init({
       delay: 700,
       duration: 2000,
