@@ -9,6 +9,7 @@ import cards from './json/cards.json';
 export class ActivitiesComponent implements OnInit {
   innerHeight: number;
   cards: object;
+  id: string;
 
   constructor() {
     this.cards = cards;
@@ -26,6 +27,13 @@ export class ActivitiesComponent implements OnInit {
     }
   }
 
+  @HostListener('window:click', ['$event'])
+  onClick(e) {
+    if (e.target.parentElement.id == 'activity-cards') {
+      this.closeModal(this.id);
+    }
+  }
+
   ngOnInit(): void {
     this.innerHeight = window.innerHeight;
   }
@@ -33,10 +41,12 @@ export class ActivitiesComponent implements OnInit {
   openModal(id: string) {
     var modal = document.getElementById(id);
     modal.style.display = 'block';
+    this.id = id;
   }
 
   closeModal(id: string) {
     var modal = document.getElementById(id);
     modal.style.display = 'none';
+    this.id = '';
   }
 }
