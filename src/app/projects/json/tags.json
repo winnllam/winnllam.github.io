@@ -3,24 +3,24 @@
     "category": "Language",
     "tags": [
       {
-        "id": "java",
-        "tag": "Java"
-      },
-      {
         "id": "htmlcss",
         "tag": "HTML/CSS"
+      },
+      {
+        "id": "java",
+        "tag": "Java"
       },
       {
         "id": "js",
         "tag": "JavaScript"
       },
       {
-        "id": "ts",
-        "tag": "TypeScript"
-      },
-      {
         "id": "ruby",
         "tag": "Ruby"
+      },
+      {
+        "id": "ts",
+        "tag": "TypeScript"
       }
     ]
   },
@@ -45,12 +45,20 @@
     "category": "Framework",
     "tags": [
       {
-        "id": "react",
-        "tag": "React"
-      },
-      {
         "id": "androidsdk",
         "tag": "Android SDK"
+      },
+      {
+        "id": "angular",
+        "tag": "Angular"
+      },
+      {
+        "id": "django",
+        "tag": "Django"
+      },
+      {
+        "id": "react",
+        "tag": "React"
       },
       {
         "id": "rails",

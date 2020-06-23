@@ -1,6 +1,21 @@
 [
   {
     "shown": true,
+    "tags": ["webapp", "ts", "htmlcss", "angular", "python", "django"],
+    "number": 8,
+    "images": ["wireframe"],
+    "title": "Online Food Delivery Service",
+    "name": "Scarborough Dining",
+    "status": "Active",
+    "duration": "June 2020 - Present",
+    "oneLiner": "An app to order Scarborough cuisines online.",
+    "tech": "Angular, Django, MongoDB, Docker",
+    "desc": ["A project for Intro to Software Engineering course."],
+    "resources": [],
+    "url": ""
+  },
+  {
+    "shown": true,
     "tags": ["webapp", "ts", "js", "htmlcss", "react"],
     "number": 7,
     "images": ["streamline1", "streamline2", "streamline3"],
@@ -113,7 +128,7 @@
   },
   {
     "shown": true,
-    "tags": ["htmlcss", "js", "website"],
+    "tags": ["htmlcss", "website", "ts", "angular"],
     "number": 2,
     "images": ["wireframe"],
     "title": "Website Creation",
@@ -121,7 +136,7 @@
     "status": "Active",
     "duration": "Sept 2018 - Present",
     "oneLiner": "A personal profile website.",
-    "tech": "HTML, CSS, JavaScript",
+    "tech": "Angular, HTML, CSS, TypeScript",
     "desc": [
       "You're looking at it right now! This website was made from stratch by yours truly, to display all the things I have created or accomplished. This is a chance to show my competence in simple web creation and development."
     ],

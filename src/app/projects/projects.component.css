@@ -43,6 +43,10 @@
   margin: 0;
 }
 
+.btn {
+  margin-right: 5px;
+}
+
 /* TAGS */
 #tagframe {
   text-align: center;

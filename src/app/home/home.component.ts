@@ -18,10 +18,11 @@ export class HomeComponent implements OnInit {
   activity: object;
 
   title = 'Winnie Lam';
-  position = 'Computer Science Specialist Student';
+  position = 'Incoming Visiting Platform Reliability Engineer Co-op @ Manulife';
+  //position = 'Computer Science Specialist Student';
   imageNum = Math.floor(Math.random() * 8) + 1;
   slogan =
-    'An aspiring computer science student with a passion for aesthetics, creation and computers.';
+    'An aspiring 3rd year computer science student with a passion for aesthetics, creation, and technology.';
 
   constructor() {
     this.resume = resume;
@@ -45,10 +46,10 @@ export class HomeComponent implements OnInit {
     this.setTitleHeight();
 
     AOS.init({
-      delay: 700,
-      duration: 2000,
+      delay: 300,
+      duration: 1500,
       once: false,
-      anchorPlacement: 'top-center',
+      anchorPlacement: 'top-bottom',
     });
   }
 }

@@ -8,13 +8,14 @@
       "Python",
       "C",
       "Shell Scripting",
+      "Haskell",
       "SQL",
       "Ruby"
     ]
   },
   {
     "category": "Frameworks",
-    "sub": ["Bootstrap", "React", "Angular", "Vue.js", "Ruby on Rails"]
+    "sub": ["Bootstrap", "Angular", "React", "Vue.js", "Ruby on Rails"]
   },
   {
     "category": "Database",
@@ -26,7 +27,14 @@
   },
   {
     "category": "Software/Tools",
-    "sub": ["Microsoft Office", "Node.js", "JSON", "Android Studio", "Jira"]
+    "sub": [
+      "Docker",
+      "Jira",
+      "Node.js",
+      "JSON",
+      "Android Studio",
+      "Microsoft Office"
+    ]
   },
   {
     "category": "Soft Skills",
