@@ -4,7 +4,7 @@ import cards from './json/cards.json';
 @Component({
   selector: 'app-activities',
   templateUrl: './activities.component.html',
-  styleUrls: ['./activities.component.css'],
+  styleUrls: ['./activities.component.scss'],
 })
 export class ActivitiesComponent implements OnInit {
   innerHeight: number;

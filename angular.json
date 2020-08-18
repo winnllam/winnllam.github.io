@@ -23,12 +23,14 @@
             "styles": [
               "node_modules/aos/dist/aos.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/animejs/lib/anime.min.js",
+              "node_modules/charming/index.js"
             ]
           },
           "configurations": {
@@ -87,7 +89,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -120,5 +122,10 @@
   "defaultProject": "ng-winnllam",
   "cli": {
     "analytics": "60dd071f-e599-433a-b079-e23ccc9aa698"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
   }
 }
