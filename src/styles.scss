@@ -91,6 +91,26 @@ img {
 }
 
 /* PAGE HEADERS */
+.title {
+  height: 600px;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.relative {
+  position: relative;
+}
 
 /* TITLE ANIMATION */
 .ml1 {
@@ -99,7 +119,6 @@ img {
 }
 
 .ml1 .letter {
-  display: inline-block;
   line-height: 1em;
 }
 

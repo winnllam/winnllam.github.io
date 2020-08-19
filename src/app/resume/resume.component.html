@@ -1,39 +1,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-  h2 {
-    color: #4caf50;
-    font-family: Raleway;
-    font-size: 30px;
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .card {
-    margin-top: 20px;
-    width: 200px;
-  }
-
-  .card-text {
-    font-size: 15px;
-  }
-</style>
-
-<div style="position: relative;">
-  <section id="title">
-    <img id="header" src="assets/headers/resume.jpg" alt="header" />
+<div class="relative">
+  <section class="title">
+    <img class="header" src="assets/headers/resume.jpg" alt="header" />
   </section>
-  <div
-    style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    "
-  >
+  <div class="title-text">
     <section id="body">
       <h1 class="ml1">
         <span class="text-wrapper">
@@ -48,7 +19,7 @@
 
 <div id="resume-format">
   <div id="resume-sections">
-    <h2 style="display: inline;">OBJECTIVE</h2>
+    <h2 class="resume-headers">OBJECTIVE</h2>
     <div class="resume">
       <p>
         As an aspiring computer science student, I wish to use my skill set to
@@ -57,7 +28,7 @@
       </p>
     </div>
 
-    <h2 style="display: inline;">EDUCATION</h2>
+    <h2 class="resume-headers">EDUCATION</h2>
     <div class="resume">
       <p>University of Toronto (2018 - Present)</p>
       <p><b>Honours Bachelor of Science</b></p>
@@ -74,7 +45,7 @@
       </ul>
     </div>
 
-    <h2 style="display: inline;">EXPERIENCE</h2>
+    <h2 class="resume-headers">EXPERIENCE</h2>
     <div class="resume">
       <div *ngFor="let exp of experience">
         <p>
@@ -93,7 +64,7 @@
       </div>
     </div>
 
-    <h2 style="display: inline;">PROJECTS AND EXTRA-CURRICULARS</h2>
+    <h2 class="resume-headers">PROJECTS AND EXTRA-CURRICULARS</h2>
     <div class="resume">
       <p>
         <i>

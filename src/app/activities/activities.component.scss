@@ -1,16 +1,5 @@
 @import "src/styles";
 
-/* HEADER */
-#title {
-  height: 600px;
-}
-
-#header {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 /*ACTIVITY BOXES*/
 #activity-cards {
   margin: 20px 10%;
@@ -31,6 +20,14 @@
   text-align: center;
   overflow: auto;
   display: inline-block;
+
+  @media screen and (max-width: 1200px) {
+    flex: 0 1 45%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex: 0 1 100%;
+  }
 }
 
 .eicon {
@@ -79,6 +76,11 @@
   border-radius: 3px;
   width: 900px;
   height: 650px;
+
+  @media screen and (max-width: 900px) {
+    height: 95%;
+    width: 90%;
+  }
 }
 
 .position-desc {
@@ -87,6 +89,10 @@
 
 .imgbox {
   overflow: auto;
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
 }
 
 .imgleft {
@@ -95,6 +101,11 @@
   height: auto;
   width: 49%;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 700px) {
+    float: none;
+    width: 100%;
+  }
 }
 
 .imgright {
@@ -102,6 +113,11 @@
   height: auto;
   width: 49%;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 700px) {
+    float: none;
+    width: 100%;
+  }
 }
 
 /*close*/
@@ -149,48 +165,6 @@
   opacity: 1;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 1200px) {
-  /* ACTIVITIES */
-  .evtbox {
-    flex: 0 1 45%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  /* ACTIVITIES */
-  .evtbox {
-    flex: 0 1 100%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  /* ACTIVITIES */
-  .modal-content {
-    height: 95%;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  /* ACTIVITIES */
-  .imgbox {
-    display: block;
-  }
-
-  .imgleft {
-    float: none;
-    width: 100%;
-  }
-
-  .imgright {
-    float: none;
-    width: 100%;
-  }
-}
-
-/* width less than 480 px */
 @media screen and (max-width: 480px) {
   html {
     -webkit-text-size-adjust: none;

@@ -1,6 +1,7 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { trigger, transition, animate, style } from '@angular/animations';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+declare var anime: any;
 
 import project from './json/projects.json';
 import feature from './json/feature.json';
@@ -20,7 +21,7 @@ import tags from './json/tags.json';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, AfterViewInit {
   faPlus = faPlus;
   innerWidth: any;
 
@@ -37,6 +38,36 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>"
+    );
+
+    anime
+      .timeline({ loop: false })
+      .add({
+        targets: '.ml1 .letter',
+        scale: [0.3, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: 'easeOutExpo',
+        duration: 600,
+        delay: (el, i) => 70 * (i + 1),
+      })
+      .add({
+        targets: '.ml1 .line',
+        scaleX: [0, 1],
+        opacity: [0.5, 1],
+        easing: 'easeOutExpo',
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i),
+      });
+  }
 
   filter(id: string) {
     if (this.clicked.includes(id)) {
