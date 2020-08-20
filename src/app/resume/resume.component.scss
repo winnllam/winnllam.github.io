@@ -44,6 +44,10 @@ p {
 .card {
   margin-top: 20px;
   width: 200px;
+
+  @media screen and (max-width: 480px) {
+    width: auto;
+  }
 }
 
 .card-text {
