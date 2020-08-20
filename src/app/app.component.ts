@@ -3,6 +3,7 @@ import {
   faInstagram,
   faGithub,
   faLinkedin,
+  faDribbble,
 } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -17,6 +18,7 @@ export class AppComponent {
   faInstagram = faInstagram;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
+  faDribbble = faDribbble;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {

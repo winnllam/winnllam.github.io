@@ -14,8 +14,7 @@
   flex: 0 1 29%;
   margin: 20px;
   padding: 10px;
-  border: 1.5px solid black;
-  border-radius: 3px;
+  border-radius: 10px;
   background-color: white;
   text-align: center;
   overflow: auto;
@@ -35,21 +34,6 @@
   height: auto;
   margin: auto 0;
   align-items: center;
-}
-
-.expand {
-  /* button */
-  background-color: white;
-  color: black;
-  border: 2px solid #a07276;
-  padding: 5px 10px;
-  margin: 10px;
-  font-size: 15px;
-}
-
-.expand:hover {
-  background-color: #a07276;
-  color: white;
 }
 
 .modal {

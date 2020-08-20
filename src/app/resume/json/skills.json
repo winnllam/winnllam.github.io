@@ -22,10 +22,6 @@
     "sub": ["SQLite", "MySQL"]
   },
   {
-    "category": "Code Management",
-    "sub": ["Git/GitHub", "subversion (SVN)"]
-  },
-  {
     "category": "Software/Tools",
     "sub": [
       "Docker",

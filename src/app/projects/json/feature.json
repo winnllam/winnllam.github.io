@@ -1,5 +1,16 @@
 [
   {
+    "id": "finddining",
+    "title": "Find Dining",
+    "oneLiner": "Chosen by City of Toronto, a food order app that allows restaurant owners to share their stories.",
+    "link": [
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/team_08-project"
+      }
+    ]
+  },
+  {
     "id": "chatbotbox",
     "title": "Chat Bot Box",
     "oneLiner": "A chat box UI for a Dialogflow agent.",

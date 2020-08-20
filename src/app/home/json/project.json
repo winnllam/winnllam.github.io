@@ -1,5 +1,13 @@
 [
   {
+    "name": "Find Dining",
+    "oneLiner": "a food ordering app that allows Scarborough restaurant owners to share their stories",
+    "bullets": [
+      "Winning project chosen by the City of Toronto",
+      "Developed a food ordering web app focused on helping Scarborough restaurant owners showcase their history and stories"
+    ]
+  },
+  {
     "name": "Streamline",
     "oneLiner": "an app that makes the process easier for international students",
     "bullets": [
@@ -13,14 +21,6 @@
     "bullets": [
       "Developed a chat box UI to enable users to chat with agents outside of the Dialogflow console",
       "Retrieved responses from Dialogflow API for a complete conversation flow"
-    ]
-  },
-  {
-    "name": "Pineapple",
-    "oneLiner": "an eCommerce Android Application",
-    "bullets": [
-      "An eCommerce android application using Java, SQLite, and Android Studio",
-      "Stores and retrieves purchases and accounts for each user, and displayed the app’s shopping and cart content in a lucid and user-friendly manner"
     ]
   }
 ]

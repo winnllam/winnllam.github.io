@@ -1,3 +1,6 @@
+$violet-color: #a07276;
+$btn-color: #a07276;
+
 html {
   margin: 0;
   overflow-x: hidden;
@@ -57,6 +60,21 @@ img {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.color-btn {
+  background-color: white;
+  color: black;
+  border: 1.5px solid $btn-color;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.color-btn:hover {
+  background-color: $btn-color;
+  color: white;
 }
 
 /* NAVIGATION */
