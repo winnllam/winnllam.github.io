@@ -1,5 +1,47 @@
 @import "src/styles";
 
-h1 {
-  font-size: 70px;
+h2 {
+  text-align: center;
 }
+
+textarea {
+  width: 500px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  width: 500px;
+
+  @media screen and (max-width: 600px) {
+    margin: 0 5%;
+    width: 85%;
+  }
+}
+
+.thankyou_message {
+  margin: 10px 20%;
+  text-align: center;
+}
+
+#name,
+#email {
+  width: 500px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+#send {
+  float: right;
+}
+
+/*
+  @media screen and (max-width: 1200px) {
+    flex: 0 1 45%;
+  }
+*/

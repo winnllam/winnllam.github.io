@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 declare var anime: any;
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +8,8 @@ declare var anime: any;
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit, AfterViewInit {
+  faPaperPlane = faPaperPlane;
+
   constructor() {}
 
   ngOnInit(): void {}
