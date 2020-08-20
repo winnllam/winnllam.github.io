@@ -14,6 +14,7 @@ import activity from './json/activity.json';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   innerHeight: number;
+  arrowsOutside = true;
   resume: object;
   project: object;
   activity: object;
@@ -24,6 +25,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
   slogan =
     'An aspiring 3rd year computer science student with a passion for aesthetics, creation, and technology.';
 
+  images = [
+    { path: 'assets/photography/1.jpg' },
+    { path: 'assets/photography/2.jpg' },
+    { path: 'assets/photography/3.jpg' },
+    { path: 'assets/photography/4.jpg' },
+    { path: 'assets/photography/5.jpg' },
+  ];
+
   constructor() {
     this.resume = resume;
     this.project = project;
@@ -31,19 +40,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   setTitleHeight() {
-    this.innerHeight = window.innerHeight;
-
     var el = document.getElementById('title');
     el.style.height = this.innerHeight + 'px';
   }
 
   @HostListener('window:resize', ['$event'])
   onResize() {
+    this.innerHeight = window.innerHeight;
     this.setTitleHeight();
+
+    this.arrowsOutside = window.innerWidth < 925 ? false : true;
   }
 
   ngOnInit() {
-    this.setTitleHeight();
+    this.onResize();
 
     AOS.init({
       delay: 300,

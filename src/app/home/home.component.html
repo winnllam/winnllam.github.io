@@ -22,13 +22,14 @@
   <h2>Welcome</h2>
   <br />
   <p>
-    {{ slogan }}
+    <i>
+      {{ slogan }}
+    </i>
   </p>
-  <p>Contact information in the footer and Contact tab.</p>
 </div>
 <br />
 
-<div data-aos="fade-right" id="about">
+<div data-aos="fade-up" id="about">
   <img
     id="me"
     [src]="'assets/self/win' + imageNum + '.jpg'"
@@ -37,108 +38,35 @@
     onContextMenu="return false;"
   />
 
-  <div id="info" style="padding: 2%; margin: 10px;">
-    <h2 style="font-size: 45px;">Hi, it's Winnie!</h2>
+  <div id="info">
+    <h2 style="font-size: 45px; text-align: center;">Hi, it's Winnie!</h2>
+    <h3 style="text-align: center;">(/ˈwɪniː/ WIN-ee)</h3>
     <br />
-    <p>
-      I am currently a 3rd year attending the <b>University of Toronto</b>,
-      program for
-      <i>Specialist Computer Science (Software Engineering Stream)</i>. My
-      interest in computer science started in grade 10. Now, I have 4 years of
-      experience and knowledge of multiple programming languages and
-      frameworksunder my belt.
-    </p>
-    <p>
-      I have also volunteered for various STEM related roles for students
-      interested in pursuing the field in their future. Currently, I am a
-      student ambassador campus tour guide, and was previously a teaching
-      assistant and a WiCSM mentor.
-    </p>
-    <p>
-      Previously, I have done a workterm at RBC Royal Bank as Developer Co-op on
-      the Innovation Team. Currently, I am a Front-End Developer for LIVE
-      Competition.
-    </p>
-    <p>
-      Incoming Visiting Platform Reliability Engineer Co-op at Manulife for Fall
-      2020.
-    </p>
+    <li>UofT Computer Science (Software Engineering) Student</li>
+    <li>Incoming Visiting Platform Reliability Engineer Co-op @ Manulife</li>
+    <li>First year CS Teaching Assistant</li>
+    <li>Front-End Developer @ LIVE Competition</li>
+    <li>Mentorship Program Coordinator & Student Ambassador</li>
     <br />
   </div>
 </div>
 
-<div data-aos="fade-left" class="content-wrap" id="resume">
-  <br />
-  <h2>Quick Overview...</h2>
-  <br />
-  <a routerLink="/resume"
-    ><img class="bubble-icons" src="assets/icons/resume.png"
-  /></a>
-  <div class="box">
-    <h2 class="white">Résumé</h2>
-    <br />
-    <div *ngFor="let exp of resume">
-      <p>
-        <b>{{ exp.role }}</b
-        >, {{ exp.company }}
-      </p>
-      <p>
-        <i>{{ exp.duration }}</i>
-      </p>
-      <br />
-    </div>
-
-    <p>
-      <a
-        href="https://drive.google.com/open?id=1FO4ty81THO92dGWc4gBToEf70l2ZW55Y"
-        target="_blank"
-        >Resume Link</a
-      >
-    </p>
-  </div>
-</div>
-
-<div data-aos="fade-right" class="content-wrap" id="projects">
-  <a routerLink="/projects"
-    ><img class="bubble-icons" src="assets/icons/project.png"
-  /></a>
-  <div class="box">
-    <h2 class="white">Projects</h2>
-    <br />
-    <p><b>Recently:</b></p>
-    <div *ngFor="let proj of project">
-      <p>
-        <i>{{ proj.name }}</i
-        >, {{ proj.oneLiner }}
-      </p>
-      <ul>
-        <li *ngFor="let bullet of proj.bullets">
-          {{ bullet }}
-        </li>
-      </ul>
-      <br />
-    </div>
-  </div>
-</div>
-
-<div data-aos="fade-left" class="content-wrap" id="activity">
-  <a routerLink="/activities"
-    ><img class="bubble-icons" src="assets/icons/collective.png"
-  /></a>
-  <div class="box">
-    <h2 class="white">Activities</h2>
-    <br />
-    <p><b>Presently:</b></p>
-    <div *ngFor="let act of activity">
-      <p>
-        <i>{{ act.role }}</i>
-      </p>
-      <ul>
-        <li *ngFor="let bullet of act.bullets">
-          {{ bullet }}
-        </li>
-      </ul>
-      <br />
-    </div>
+<div data-aos="fade-up">
+  <h2 class="carousel-title">Winntography</h2>
+  <div class="carousel">
+    <carousel
+      [height]="300"
+      [cellWidth]="'100%'"
+      [margin]="30"
+      [loop]="true"
+      [autoplay]="true"
+      [autoplayInterval]="3000"
+      [dots]="true"
+      [borderRadius]="10"
+      [arrowsOutside]="arrowsOutside"
+      [objectFit]="'cover'"
+      [images]="images"
+    >
+    </carousel>
   </div>
 </div>

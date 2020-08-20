@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxScrollLockModule } from 'ngx-scroll-lock';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     FontAwesomeModule,
     NgxScrollLockModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

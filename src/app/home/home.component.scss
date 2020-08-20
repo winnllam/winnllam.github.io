@@ -1,7 +1,17 @@
 @import "src/styles";
 
+@media screen and (max-width: 800px) {
+  h4 {
+    font-size: 100px;
+  }
+}
+
 p {
   margin: 8px;
+}
+
+li {
+  font-size: 18px;
 }
 
 .white {
@@ -18,6 +28,10 @@ p {
   font-size: 30px;
   text-align: center;
   color: #fff0a8;
+
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+  }
 }
 
 #backdrop {
@@ -32,17 +46,23 @@ p {
   margin: 0 auto -50px;
 }
 
-/* SECTIONS */
-.content-wrap {
-  max-width: 875px;
-  margin: 35px auto;
-  overflow: auto;
-  display: block;
+.carousel-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.carousel {
+  width: 800px;
+  margin: auto;
+
+  @media screen and (max-width: 925px) {
+    width: auto;
+  }
 }
 
 #about {
   max-width: 980px;
-  margin: 35px auto;
+  margin: 50px auto;
   overflow: auto;
 }
 
@@ -50,118 +70,42 @@ p {
   width: 350px;
   border-radius: 50%;
   float: left;
-}
 
-#info {
-  width: 600px;
-  float: right;
-}
-
-/* OVERVIEW */
-.box {
-  width: 700px;
-  color: white;
-  background: rgb(151, 151, 151);
-  position: relative;
-  padding: 30px;
-  margin: 35px auto;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  float: right;
-}
-
-.box:before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  top: 26px;
-  width: 0;
-  height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid #a9a9a9;
-  border-bottom: 13px solid transparent;
-}
-
-.bubble-icons {
-  width: 125px;
-  margin-right: 0;
-  float: left;
-  transition: 0.5s;
-}
-
-.bubble-icons:hover {
-  width: 137px;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 980px) {
-  /*SECTIONS*/
-  .content-wrap {
-    width: 95%;
-  }
-
-  #info {
-    width: 50%;
-    padding: 3% 4%;
-  }
-
-  #me {
+  @media screen and (max-width: 980px) {
     width: 40%;
+
+    .widget {
+      padding: 8% 7%;
+      margin-bottom: 10px;
+    }
   }
 
-  #me .widget {
-    padding: 8% 7%;
-    margin-bottom: 10px;
-  }
-
-  .box {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  /*TITLE*/
-  h4 {
-    font-size: 100px;
-  }
-
-  #position {
-    font-size: 20px;
-  }
-
-  /*SECTIONS*/
-  #info {
-    width: 100%;
-    float: none;
-    margin: 0;
-  }
-
-  #me {
+  @media screen and (max-width: 800px) {
     width: 100%;
     float: none;
     margin: 0;
     margin-bottom: 20px;
   }
+}
 
-  .box {
-    float: none;
-    width: 95%;
+#info {
+  width: 600px;
+  float: right;
+  padding: 2%;
+  margin: 10px;
+
+  @media screen and (max-width: 980px) {
+    width: 50%;
+    padding: 3% 4%;
   }
 
-  .box:before {
-    visibility: hidden;
-  }
-
-  .bubble-icons {
-    display: block;
+  @media screen and (max-width: 800px) {
+    width: 100%;
     float: none;
-    margin: auto;
+    margin: 0;
   }
 }
 
-/* width less than 480 px */
 @media screen and (max-width: 480px) {
   html {
     -webkit-text-size-adjust: none;
