@@ -47,10 +47,8 @@
       <p><i>cGPA:</i> {{ cgpa }}/4.0</p>
       <br />
       <p><i>Awards: </i></p>
-      <ul>
-        <li>Dean's List (October 2019)</li>
-        <li>University of Toronto Entrance Scholarship (2018)</li>
-      </ul>
+      <li>Dean's List (October 2019)</li>
+      <li>University of Toronto Entrance Scholarship (2018)</li>
     </div>
 
     <h2 class="resume-headers">EXPERIENCE</h2>
@@ -63,11 +61,9 @@
         <p>
           <i>{{ exp.duration }}</i>
         </p>
-        <ul>
-          <li *ngFor="let bullet of exp.details">
-            {{ bullet }}
-          </li>
-        </ul>
+        <li *ngFor="let bullet of exp.details">
+          {{ bullet }}
+        </li>
         <br />
       </div>
     </div>

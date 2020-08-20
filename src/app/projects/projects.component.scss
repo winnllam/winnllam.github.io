@@ -8,21 +8,24 @@ a:hover {
   text-decoration: none;
 }
 
+.header {
+  color: $violet-color;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
 /* FEATURE BOXES */
 #featureFrame {
-  height: 350px;
-  padding: 10px;
-  margin: 20px 20%;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  margin: 20px 15%;
+
+  @media screen and (max-width: 1100px) {
+    margin: 20px 5%;
+  }
 }
 
 .featureBox {
-  width: 300px;
-  height: 310px;
-  flex: 0 0 auto;
+  min-height: 350px;
   margin: 10px;
   border-radius: 10px;
   background-color: white;
@@ -37,7 +40,7 @@ a:hover {
 }
 
 .card-img-top {
-  height: 110px;
+  height: 50%;
   width: 100%;
   object-fit: cover;
 }
@@ -46,34 +49,6 @@ a:hover {
   font-family: Staatliches;
   font-size: 30px;
   margin: 0;
-}
-
-/* TAGS */
-#tagframe {
-  text-align: center;
-  margin: 0 5%;
-}
-
-.tagbox {
-  text-align: center;
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.tags {
-  background-color: white;
-  color: black;
-  border: 1px solid grey;
-  border-radius: 7px;
-  padding: 5px 10px;
-  margin: 5px;
-  font-size: 15px;
-}
-
-.tags:hover {
-  transition: 0.2s;
-  background-color: grey;
-  color: white;
 }
 
 /* PROJECT BOXES */
@@ -90,8 +65,20 @@ a:hover {
   }
 }
 
-.accordion .fa {
-  margin-right: 0.5rem;
+.project-card {
+  margin: 20px;
+  padding: 10px;
+}
+
+.duration {
+  color: black;
+  font-size: 18px;
+  text-align: left;
+  margin: 0 10px;
+}
+
+.tag {
+  margin: 5px;
 }
 
 .btn {
@@ -120,24 +107,6 @@ a:hover {
     width: 100%;
     float: none;
   }
-}
-
-.projimg {
-  width: 40%;
-  height: auto;
-  float: left;
-  clear: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
-
-  @media screen and (max-width: 980px) {
-    width: 100%;
-    float: none;
-  }
-}
-
-.pimages {
-  width: 100%;
 }
 
 .linkproj {

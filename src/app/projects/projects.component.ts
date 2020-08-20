@@ -1,11 +1,12 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { trigger, transition, animate, style } from '@angular/animations';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 declare var anime: any;
 
 import project from './json/projects.json';
 import feature from './json/feature.json';
-import tags from './json/tags.json';
 
 @Component({
   selector: 'app-projects',
@@ -25,19 +26,41 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   faPlus = faPlus;
   innerWidth: any;
 
-  clicked = [];
-
   featured: Array<any>;
-  tags: Array<any>;
   projects: Array<any>;
+
+  tagDict = new Map([
+    ['Angular', 'is-primary is-light'],
+    ['React', 'is-primary is-light'],
+    ['JavaScript', 'is-primary'],
+    ['Django', 'is-success is-light'],
+    ['Python', 'is-success'],
+    ['Ruby', 'is-danger'],
+    ['Rails', 'is-danger is-light'],
+    ['Java', 'is-info'],
+    ['Android Studio', 'is-info is-light'],
+    ['Docker', 'is-link'],
+    ['SQLite', 'is-link is-light'],
+    ['MongoDB', 'is-link is-light'],
+    ['winner', 'is-warning'],
+    ['course', 'is-white'],
+    ['solo', 'is-white'],
+    ['team', 'is-white'],
+  ]);
 
   constructor() {
     this.featured = feature;
-    this.tags = tags;
     this.projects = project;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init({
+      delay: 300,
+      duration: 1500,
+      once: true,
+      anchorPlacement: 'top-bottom',
+    });
+  }
 
   ngAfterViewInit(): void {
     // Wrap every letter in a span
@@ -67,47 +90,5 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         offset: '-=875',
         delay: (el, i, l) => 80 * (l - i),
       });
-  }
-
-  filter(id: string) {
-    if (this.clicked.includes(id)) {
-      this.clicked.splice(this.clicked.indexOf(id), 1);
-      document.getElementById(id).style.backgroundColor = 'white';
-      document.getElementById(id).style.color = 'black';
-    } else {
-      this.clicked.push(id);
-      document.getElementById(id).style.backgroundColor = 'gray';
-      document.getElementById(id).style.color = 'white';
-    }
-
-    if (id == 'clear' || this.clicked.length === 0) {
-      //clear tags
-      for (var j = 0; j < this.clicked.length; j++) {
-        document.getElementById(this.clicked[j]).style.backgroundColor =
-          'white';
-        document.getElementById(this.clicked[j]).style.color = 'black';
-      }
-      this.clicked = [];
-
-      for (var i = 0; i < this.projects.length; i++) {
-        this.projects[i].shown = true;
-      }
-      return;
-    }
-
-    // fade what's not needed
-    var show = false;
-    for (var i = 0; i < this.projects.length; i++) {
-      for (var j = 0; j < this.projects[i].tags.length; j++) {
-        //if it should be shown
-        if (this.clicked.includes(this.projects[i].tags[j])) {
-          show = true;
-          //go to next project
-          break;
-        }
-      }
-      this.projects[i].shown = show ? true : false;
-      show = false;
-    }
   }
 }

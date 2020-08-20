@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     AOS.init({
       delay: 300,
       duration: 1500,
-      once: false,
+      once: true,
       anchorPlacement: 'top-bottom',
     });
   }
