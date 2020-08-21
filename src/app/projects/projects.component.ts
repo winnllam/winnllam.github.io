@@ -30,8 +30,8 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   projects: Array<any>;
 
   tagDict = new Map([
-    ['Angular', 'is-primary is-light'],
-    ['React', 'is-primary is-light'],
+    ['Angular', 'is-primary'],
+    ['React', 'is-primary'],
     ['JavaScript', 'is-primary'],
     ['Django', 'is-success is-light'],
     ['Python', 'is-success'],
@@ -39,9 +39,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     ['Rails', 'is-danger is-light'],
     ['Java', 'is-info'],
     ['Android Studio', 'is-info is-light'],
-    ['Docker', 'is-link'],
-    ['SQLite', 'is-link is-light'],
-    ['MongoDB', 'is-link is-light'],
+    ['Docker', 'is-link is-light'],
+    ['SQLite', 'is-link'],
+    ['MongoDB', 'is-link'],
     ['winner', 'is-warning'],
     ['course', 'is-white'],
     ['solo', 'is-white'],

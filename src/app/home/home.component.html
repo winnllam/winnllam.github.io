@@ -39,7 +39,7 @@
   />
 
   <div id="info">
-    <h2 style="font-size: 45px; text-align: center;">Hi, it's Winnie!</h2>
+    <h2>Hi, it's Winnie!</h2>
     <h3 style="text-align: center;">(/ˈwɪniː/ WIN-ee)</h3>
     <br />
     <li>UofT Computer Science (Software Engineering) Student</li>
@@ -51,8 +51,38 @@
   </div>
 </div>
 
+<div class="container" data-aos="fade-up">
+  <h2>Highlights</h2>
+  <div class="columns">
+    <div *ngFor="let hl of highlights" class="column">
+      <div class="card">
+        <header class="card-header">
+          <p *ngIf="hl.url != ''" class="card-header-title">
+            <a href="{{ hl.url }}">{{ hl.title }}</a>
+          </p>
+          <p *ngIf="hl.url == ''" class="card-header-title">
+            {{ hl.title }}
+          </p>
+          <div class="card-header-icon">
+            <span class="icon">
+              <i class="fas {{ hl.icon }}"></i>
+            </span>
+          </div>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            {{ hl.content }}
+            <br />
+            <time class="has-text-grey">{{ hl.date }}</time>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div data-aos="fade-up">
-  <h2 class="carousel-title">Winntography</h2>
+  <h2>Winntography</h2>
   <div class="carousel">
     <carousel
       [height]="300"

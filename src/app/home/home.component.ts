@@ -3,9 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 declare var anime: any;
 
-import resume from './json/resume.json';
-import project from './json/project.json';
-import activity from './json/activity.json';
+import highlights from './json/highlights.json';
 
 @Component({
   selector: 'app-home',
@@ -15,9 +13,7 @@ import activity from './json/activity.json';
 export class HomeComponent implements OnInit, AfterViewInit {
   innerHeight: number;
   arrowsOutside = true;
-  resume: object;
-  project: object;
-  activity: object;
+  highlights: any[];
 
   position = 'Incoming Visiting Platform Reliability Engineer Co-op @ Manulife';
   //position = 'Computer Science Specialist Student';
@@ -34,9 +30,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
 
   constructor() {
-    this.resume = resume;
-    this.project = project;
-    this.activity = activity;
+    this.highlights = highlights;
   }
 
   setTitleHeight() {
