@@ -1,3 +1,16 @@
+@import "src/styles";
+
+.header {
+  color: $violet-color;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.link {
+  color: hotpink;
+}
+
 .mediaFrame {
   width: 80%;
   margin: 0 auto;

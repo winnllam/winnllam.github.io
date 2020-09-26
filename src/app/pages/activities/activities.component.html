@@ -18,7 +18,7 @@
 </div>
 
 <div id="activity-cards">
-  <div *ngFor="let card of cards" class="card evtbox">
+  <div *ngFor="let card of cards" [ngClass]="getCardClasses(card)">
     <img class="eicon" src="assets/events/logo/{{ card.logo }}" alt="evt" />
     <div>
       <button

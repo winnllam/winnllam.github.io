@@ -69,6 +69,14 @@ export class ActivitiesComponent implements OnInit, AfterViewInit {
       });
   }
 
+  getCardClasses(card: any) {
+    return {
+      card: true,
+      evtbox: true,
+      active: card.duration.includes('Present'),
+    };
+  }
+
   openModal(id: string) {
     var modal = document.getElementById(id);
     modal.style.display = 'block';

@@ -1,6 +1,10 @@
 @import "src/styles";
 
 /*ACTIVITY BOXES*/
+.active {
+  border-color: $accent-color;
+}
+
 #activity-cards {
   margin: 20px 10%;
   display: flex;
