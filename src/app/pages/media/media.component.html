@@ -1,0 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<div class="relative">
+  <section class="title">
+    <img class="header" src="assets/headers/resume.jpg" alt="header" />
+  </section>
+  <div class="title-text">
+    <section id="body">
+      <h1 class="ml1">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters">MEDIA</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+    </section>
+  </div>
+</div>
+
+<h2 style="text-align: center">
+  View them on <a href="https://dribbble.com/winnllam">Dribbble</a>
+</h2>
+<br />
+
+<div *ngIf="imageLinks.length != 0" class="mediaFrame">
+  <div *ngFor="let link of imageLinks">
+    <img class="mediaImg" src="{{ link }}" alt="{{ link }}" />
+  </div>
+</div>

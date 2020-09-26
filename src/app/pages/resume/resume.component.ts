@@ -13,7 +13,7 @@ export class ResumeComponent implements OnInit, AfterViewInit {
   skills: object;
 
   year = '3rd';
-  cgpa = '3.51';
+  cgpa = '3.58';
 
   constructor() {
     this.experience = experience;
