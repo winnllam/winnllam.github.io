@@ -15,12 +15,18 @@ export class ResumeComponent implements OnInit, AfterViewInit {
   year = '3rd';
   cgpa = '3.58';
 
+  iframeHeight: number = 500;
+
   constructor() {
     this.experience = experience;
     this.skills = skills;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    var iframe = document.getElementById("iframe") as HTMLIFrameElement;
+    this.iframeHeight = iframe.contentWindow.document.body.scrollHeight;
+    console.log(this.iframeHeight)
+  }
 
   ngAfterViewInit(): void {
     // Wrap every letter in a span

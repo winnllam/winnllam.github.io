@@ -2,50 +2,31 @@
   {
     "role": "Visiting Reliability Platform Engineer Co-op",
     "company": "Manulife",
-    "duration": "September 2020",
-    "details": []
+    "duration": "September - December 2020"
   },
   {
     "role": "Computer Science Teaching Assistant",
     "company": "University of Toronto  Scarborough",
-    "duration": "September 2020 - Present, September 2019 - December 2019",
-    "details": [
-      "Clarified student questions about first year computer science and Python concepts",
-      "Hosted office hours for students to seek one-on-one help outside of class"
-    ]
+    "duration": "September - December 2020, September - December 2019"
   },
   {
     "role": "Mentorship Program Coordinator",
     "company": "WiCSM",
-    "duration": "July 2020 - Present",
-    "details": []
+    "duration": "July 2020 - Present"
   },
   {
     "role": "Front-End Developer",
     "company": "LIVE Competition",
-    "duration": "April 2020 - Present",
-    "details": [
-      "Joined LIVE's Executive Team as a part of the Engineering Section",
-      "Working on enhancing the business competition portal, Blueboard, used by 100 delegates and judges"
-    ]
+    "duration": "April 2020 - Present"
   },
   {
     "role": "Developer Co-op",
     "company": "RBC Royal Bank",
-    "duration": "January 2020 - April 2020",
-    "details": [
-      "RBC Innovation Team, as apart of the Emerging Technology Lab's development team",
-      "Created diagnostic UI and feedback UI for a Dialogflow chat bot",
-      "Adapted InnerSource code to utilize a dashboard to display collected conversations in real time through Elasticsearch",
-      "Assisted in developing broker services using RabbitMQ and Redis"
-    ]
+    "duration": "January 2020 - April 2020"
   },
   {
     "role": "Student",
     "company": "Google's Computer Science Summer Institute",
-    "duration": "July 2018",
-    "details": [
-      "Obtained practical programming experience among Google engineers using HTML, CSS, JavaScript, and Python to develop and host a web application on Google App Engine"
-    ]
+    "duration": "July 2018"
   }
 ]

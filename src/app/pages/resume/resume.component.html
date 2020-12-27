@@ -27,18 +27,12 @@
         that my passions, skills, and abilities can help make a difference.
       </p>
       <br />
-      <p>
-        <a
-          href="https://drive.google.com/open?id=1FO4ty81THO92dGWc4gBToEf70l2ZW55Y"
-          target="_blank"
-          >Resume Link</a
-        >
-      </p>
+      <iframe id="iframe" src="https://drive.google.com/file/d/1FO4ty81THO92dGWc4gBToEf70l2ZW55Y/preview" width="100%" height="500px"></iframe>
     </div>
 
     <h2 class="resume-headers">EDUCATION</h2>
     <div class="resume">
-      <p>University of Toronto (2018 - Present)</p>
+      <p>University of Toronto (2018 - 2023)</p>
       <p><b>Honours Bachelor of Science</b></p>
       <p>
         Specialist (Co-operative) Program in Computer Science - Software
@@ -47,11 +41,12 @@
       <p><i>cGPA:</i> {{ cgpa }}/4.0</p>
       <br />
       <p><i>Awards: </i></p>
+      <li>Dean's List (September 2020)</li>
       <li>Dean's List (October 2019)</li>
       <li>University of Toronto Entrance Scholarship (2018)</li>
     </div>
 
-    <h2 class="resume-headers">EXPERIENCE</h2>
+    <h2 class="resume-headers">EXPERIENCE OVERVIEW</h2>
     <div class="resume">
       <div *ngFor="let exp of experience">
         <p>
@@ -61,21 +56,8 @@
         <p>
           <i>{{ exp.duration }}</i>
         </p>
-        <li *ngFor="let bullet of exp.details">
-          {{ bullet }}
-        </li>
         <br />
       </div>
-    </div>
-
-    <h2 class="resume-headers">PROJECTS AND EXTRA-CURRICULARS</h2>
-    <div class="resume">
-      <p>
-        <i>
-          More details about projects and extra-curriculars can be seen in the
-          projects tab and activities tab!
-        </i>
-      </p>
     </div>
   </div>
   <br />

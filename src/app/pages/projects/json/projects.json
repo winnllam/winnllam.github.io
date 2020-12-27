@@ -1,5 +1,13 @@
 [
   {
+    "tags": ["Assembly", "course", "solo"],
+    "image": "dj",
+    "name": "Doodle Jump",
+    "duration": "November - December 2020",
+    "desc": "A functional Doodle Jump game done in MIPS Assembly with different functionality and features similar to the original game.",
+    "url": "https://github.com/winnllam/doodle-jump"
+  },
+  {
     "tags": [
       "winner",
       "Web Application",
@@ -12,7 +20,6 @@
       "team"
     ],
     "image": "sd1",
-    "title": "Online Food Delivery Service",
     "name": "Find Dining",
     "duration": "June - August 2020",
     "desc": "Chosen as the winning project by the City of Toronto and the BRIDGE UTSC, a food ordering app that allows restaurant owners to share their stories and have online presence during the hard times of COVID-19.",
@@ -22,7 +29,6 @@
     "tags": ["winner", "Web Application", "React", "team"],
     "image": "streamline1",
     "name": "Streamline",
-    "status": "Inactive",
     "duration": "April 2020",
     "desc": "RBC Innovation Challenge winner! (3rd place) An app to help international students navigate finances and permits, local deals, and streamline banking in a new country using a currency convertor and link to local financial advisors around campus.",
     "url": ""
