@@ -2,21 +2,20 @@
   {
     "category": "Languages",
     "sub": [
-      "Java",
       "HTML/CSS",
       "TypeScript",
       "JavaScript",
       "Python",
       "C",
+      "Java",
       "Shell Scripting",
-      "Haskell",
       "SQL",
       "Ruby"
     ]
   },
   {
     "category": "Frameworks",
-    "sub": ["Bootstrap", "Angular", "React", "Vue.js", "Ruby on Rails"]
+    "sub": ["Bootstrap", "Angular", "React", "Vue.js", "Express", "Flask"]
   },
   {
     "category": "Database",
@@ -25,10 +24,12 @@
   {
     "category": "Software/Tools",
     "sub": [
-      "Docker",
       "Jira",
+      "Figma",
       "Node.js",
       "JSON",
+      "Docker",
+      "Concourse CI",
       "Android Studio",
       "Microsoft Office"
     ]

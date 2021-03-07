@@ -11,6 +11,17 @@
     ]
   },
   {
+    "id": "1secret",
+    "title": "1Secret",
+    "oneLiner": "Web app that lets you share temporary secret links for passwords and sensitive information.",
+    "link": [
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/1Secret"
+      }
+    ]
+  },
+  {
     "id": "chatbotbox",
     "title": "Chat Bot Box",
     "oneLiner": "A chat box UI for a Dialogflow agent.",
@@ -33,17 +44,6 @@
       {
         "site": "Github",
         "url": "https://github.com/winnllam/chatbotbox"
-      }
-    ]
-  },
-  {
-    "id": "pineapple",
-    "title": "Pineapple",
-    "oneLiner": "An eCommerce mobile android application selling pineapples.",
-    "link": [
-      {
-        "site": "Github",
-        "url": "https://github.com/winnllam/pineapple"
       }
     ]
   }

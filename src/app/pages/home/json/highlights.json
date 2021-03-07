@@ -1,5 +1,12 @@
 [
   {
+    "title": "deCODE - 1Password",
+    "content": "Chosen out of 1000+ participants to attend deCODE hackathon, partnered with 1Password mentors to create a web application that integrates their upcoming 1Password feature.",
+    "date": "July - Aug 2020",
+    "icon": "fa-trophy",
+    "url": "https://github.com/winnllam/1Secret"
+  },
+  {
     "title": "Scarborough Dining 1st Place",
     "content": "Winning team chosen by the City of Toronto and the BRIDGE UTSC, creating a food ordering app with a focus on Scarborough restaurant owners to connect and have an online presence.",
     "date": "July - Aug 2020",
@@ -12,12 +19,5 @@
     "date": "April 2020",
     "icon": "fa-trophy",
     "url": "/projects"
-  },
-  {
-    "title": "CS Teaching Assistant",
-    "content": "Selected to be a teaching assistant for a first year computer science course, helping potential first time programming learners grasp fundamental concepts.",
-    "date": "Fall 2019, Fall 2020",
-    "icon": "fa-book",
-    "url": ""
   }
 ]

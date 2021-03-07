@@ -1,5 +1,13 @@
 [
   {
+    "tags": ["Hackathon", "React", "Python", "Tornado", "team"],
+    "image": "1s",
+    "name": "1Secret",
+    "duration": "March 2021",
+    "desc": "Working together with mentors from 1Password for deCODE Hackathon; 1Secret is a web app that lets you share temporary secret links for sensitive information from 1Password vault. Share your passwords securely with time-sensitive, shareable links.",
+    "url": "https://github.com/winnllam/1Secret"
+  },
+  {
     "tags": ["Assembly", "course", "solo"],
     "image": "dj",
     "name": "Doodle Jump",
