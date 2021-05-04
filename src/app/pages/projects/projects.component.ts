@@ -28,6 +28,42 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
 
   featured: Array<any>;
   projects: Array<any>;
+  display: Array<any> = [];
+
+  filter = [
+    {
+      key: 'Web Dev',
+      match: ['Angular', 'React', 'JavaScript'],
+    },
+    {
+      key: 'Mobile',
+      match: ['Android Studio'],
+    },
+    {
+      key: 'Database',
+      match: ['SQLite', 'MongoDB'],
+    },
+    {
+      key: 'Python',
+      match: ['Python', 'Django', 'Tornado', 'Flask'],
+    },
+    {
+      key: 'Java',
+      match: ['Java'],
+    },
+    {
+      key: 'Hackathon',
+      match: ['Hackathon'],
+    },
+    {
+      key: 'Award',
+      match: ['winner'],
+    },
+    {
+      key: 'Clear',
+      match: [],
+    },
+  ];
 
   tagDict = new Map([
     ['Angular', 'is-primary'],
@@ -35,6 +71,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     ['JavaScript', 'is-primary'],
     ['Django', 'is-success is-light'],
     ['Tornado', 'is-success is-light'],
+    ['Flask', 'is-success is-light'],
     ['Python', 'is-success'],
     ['Ruby', 'is-danger'],
     ['Rails', 'is-danger is-light'],
@@ -92,5 +129,16 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         offset: '-=875',
         delay: (el, i, l) => 80 * (l - i),
       });
+  }
+
+  filter_projects(matches) {
+    this.display = matches;
+  }
+
+  checkTags(project_tags) {
+    if (this.display.length == 0) {
+      return true;
+    }
+    return project_tags.some((item) => this.display.includes(item));
   }
 }

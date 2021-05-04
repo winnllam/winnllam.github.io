@@ -9,7 +9,7 @@ export class MediaService {
   constructor(private http: HttpClient) {}
 
   getImageLinks(): Observable<any> {
-    const endpoint = `https://dribbble-tn.herokuapp.com/get_img_urls/?name=winnllam`;
+    const endpoint = `https://socialmedia-image-scapel.vercel.app/dribbble?name=winnllam`;
     return this.http.get(endpoint);
   }
 }

@@ -46,39 +46,52 @@
 </div>
 
 <br />
+<div class="filter" data-aos="fade-up">
+  <button
+    class="color-btn filter-btn"
+    *ngFor="let tag of filter"
+    (click)="filter_projects(tag.match)"
+  >
+    {{ tag.key }}
+  </button>
+</div>
+
+<br />
 <h2 class="header">View All</h2>
 <div class="projbox">
-  <div
-    data-aos="fade-up"
-    *ngFor="let project of projects"
-    class="card project-card"
-  >
-    <div class="columns">
-      <div class="column is-two-fifths">
-        <img
-          class="project-logo"
-          src="assets/project_images/projects/{{ project.image }}.png"
-        />
-      </div>
-      <div class="column">
-        <a *ngIf="project.url" href="{{ project.url }}" target="_blank">
-          <button class="color-btn linkproj">Link to Project</button>
-        </a>
-
-        <h2>{{ project.name }}</h2>
-        <h1 class="duration">{{ project.duration }}</h1>
-
-        <div style="display: inline;" *ngFor="let tag of project.tags">
-          <span *ngIf="tag == 'winner'" class="tag is-warning">
-            <i class="fas fa-trophy"></i>
-          </span>
-          <span *ngIf="tag != 'winner'" class="tag {{ tagDict.get(tag) }}">
-            {{ tag }}
-          </span>
+  <div *ngFor="let project of projects">
+    <div
+      *ngIf="checkTags(project.tags)"
+      class="card project-card"
+      data-aos="fade-up"
+    >
+      <div class="columns">
+        <div class="column is-two-fifths">
+          <img
+            class="project-logo"
+            src="assets/project_images/projects/{{ project.image }}.png"
+          />
         </div>
+        <div class="column">
+          <a *ngIf="project.url" href="{{ project.url }}" target="_blank">
+            <button class="color-btn linkproj">Link to Project</button>
+          </a>
 
-        <p>{{ project.desc }}</p>
-        <br />
+          <h2>{{ project.name }}</h2>
+          <h1 class="duration">{{ project.duration }}</h1>
+
+          <div style="display: inline" *ngFor="let tag of project.tags">
+            <span *ngIf="tag == 'winner'" class="tag is-warning">
+              <i class="fas fa-trophy"></i>
+            </span>
+            <span *ngIf="tag != 'winner'" class="tag {{ tagDict.get(tag) }}">
+              {{ tag }}
+            </span>
+          </div>
+
+          <p>{{ project.desc }}</p>
+          <br />
+        </div>
       </div>
     </div>
   </div>

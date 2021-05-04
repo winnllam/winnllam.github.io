@@ -1,34 +1,32 @@
 [
   {
+    "id": "kurius",
+    "logo": "kurius.png",
+    "title": "Kurius",
+    "duration": "March 2021 - Present",
+    "position": "Mentor",
+    "images": [],
+    "desc": [
+      "Joined the youth organization as a mentor for students ranging from highschool to post-secondary to share technology expertise. Currently, I am active on the organization Discord channel to help answer student questions."
+    ]
+  },
+  {
     "id": "live",
     "logo": "live.png",
     "title": "LIVE Competition",
     "duration": "April 2020 - Present",
-    "position": "Front-End Developer",
+    "position": "Vice President of Engineering, Front-End Developer",
     "images": [],
     "desc": [
       "Joined the LIVE Competition Executive Team, on the Engineering Team to help improve their competition portal, Blueboard.",
-      "Tasked with extending the Blueboard platform for LIVE Competition with intuitive and user-friendly interfaces, the end goal is to ensure that the LIVE team have the resources to continue to make LIVE Competition known as one of Canada’s leading undergraduate business competitions. Meetings are held to capture ideas and implement projects ideas from managers with the help of other developers in the Engineering function.",
+      "I have since been promoted from a front-end developer to the Vice President of Engineering. Currently, I run a team of 5 developers.",
+      "As a developer, I was tasked with extending the Blueboard platform for LIVE Competition with intuitive and user-friendly interfaces, the end goal is to ensure that the LIVE team have the resources to continue to make LIVE Competition known as one of Canada’s leading undergraduate business competitions. Meetings are held to capture ideas and implement projects ideas from managers with the help of other developers in the Engineering function.",
       "Weekly sprint meetings are held to update the function on admin and progress details.",
       "Tasks include:",
       "● Collaborate with the Engineering team to design, improve, and maintain the LIVE Competition’s existing Blueboard platform (please see below to learn more), to be used by delegates, partners, judges, and other players",
       "● Helps with the integration of IT Solutions within the LIVE Competition curriculum, and/or for marketing purposes",
       "● Responsible for the development of various other IT initiatives within the LIVE team, to improve overall operational efficiency of the competition",
       "● Finds solutions to, and fixes technological challenges throughout the day of LIVE events (technical support on the day of LIVE events)"
-    ]
-  },
-  {
-    "id": "wicsm",
-    "logo": "wicsm.jpg",
-    "title": "Women in Computer Science, Statistics, and Mathematics",
-    "duration": "Sept 2019 - April 2020; July 2020 - Present",
-    "position": "Mentor, Mentorship Program Coordinator",
-    "images": [],
-    "desc": [
-      "As a part of the first ever mentorship program with WiCSM, we aim to assist first-year female computer science, mathematics, and statistics students feel a sense of community within the CMS deparment.",
-      "Our role is to provide mentor support the students in many different aspects: resume and interview prep, exam prep, study habits, course and program selection, first year advice, campus tours, resources on campus and online.",
-      "To do our duties, we stay connected to the mentees through social events and bi-weekly mentor and mentee meetings, scheduled by the mentors. Communication are also held outside of phyiscal meetings, to assist in resolving needs for immediate help",
-      "For the new school year, I am now in charge of managing how the mentorship program will run, utilizing my experience as a mentor."
     ]
   },
   {
@@ -43,6 +41,20 @@
       "After passing a training session to become a tour guide, I guided prospective students and parents through campus in groups of 5 or more people for 45-minute tours. ",
       "Tours include knowledge of: campus resources and locations, building locations, campus study spaces, and food options",
       "I was able to enhance my communication skills while talking and touring with strangers and prospective students. It made me proud knowing that giving a tour to prosective students can impact their decision in deciding their post-secondary school. It's also a lot of fun for me to be able to share my own experiences about this campus, and help ensure they'll have a good time as well. "
+    ]
+  },
+  {
+    "id": "wicsm",
+    "logo": "wicsm.jpg",
+    "title": "Women in Computer Science, Statistics, and Mathematics",
+    "duration": "Sept 2019 - April 2021",
+    "position": "Mentorship Program Coordinator, Mentor",
+    "images": [],
+    "desc": [
+      "As a part of the first ever mentorship program with WiCSM, we aim to assist first-year female computer science, mathematics, and statistics students feel a sense of community within the CMS deparment.",
+      "Our role is to provide mentor support the students in many different aspects: resume and interview prep, exam prep, study habits, course and program selection, first year advice, campus tours, resources on campus and online.",
+      "To do our duties, we stay connected to the mentees through social events and bi-weekly mentor and mentee meetings, scheduled by the mentors. Communication are also held outside of phyiscal meetings, to assist in resolving needs for immediate help",
+      "For the new school year, I am now in charge of managing how the mentorship program will run, utilizing my experience as a mentor. I host events for mentors and mentees to meet up, to either have productive discussions on how to succeed or just to hang out with people."
     ]
   },
   {

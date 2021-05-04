@@ -1,5 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { MediaService } from 'src/app/services/media.service';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 declare var anime: any;
 
 @Component({

@@ -22,25 +22,25 @@
     ]
   },
   {
-    "id": "chatbotbox",
-    "title": "Chat Bot Box",
-    "oneLiner": "A chat box UI for a Dialogflow agent.",
+    "id": "socialmedia",
+    "title": "Social Media Image API",
+    "oneLiner": "Extract thumbnail URLs of shots made by a user on different media platforms.",
     "link": [
       {
+        "site": "API Link",
+        "url": "https://socialmedia-image-scapel.vercel.app/"
+      },
+      {
         "site": "Github",
-        "url": "https://github.com/winnllam/chatbotbox"
+        "url": "https://github.com/winnllam/socialmedia-image-scapel"
       }
     ]
   },
   {
-    "id": "just-peachy",
-    "title": "Just-Peachy",
-    "oneLiner": "A website gallery to display different page designs with multi-purposes.",
+    "id": "chatbotbox",
+    "title": "Chat Bot Box",
+    "oneLiner": "A chat box UI for a Dialogflow agent.",
     "link": [
-      {
-        "site": "Website",
-        "url": "https://winnllam.github.io/just-peachy"
-      },
       {
         "site": "Github",
         "url": "https://github.com/winnllam/chatbotbox"

@@ -15,11 +15,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   arrowsOutside = true;
   highlights: any[];
 
-  position = 'Incoming Full Stack Software Developer Co-op @ Ada';
+  position = 'Full Stack Developer Co-op @ Ada';
   //position = 'Computer Science Specialist Student';
   imageNum = Math.floor(Math.random() * 8) + 1;
   slogan =
-    'An aspiring 3rd year computer science student with a passion for aesthetics, creation, and technology.';
+    'An aspiring 4th year computer science student with a passion for aesthetics, creation, and technology.';
 
   images = [
     { path: 'assets/photography/1.jpg' },

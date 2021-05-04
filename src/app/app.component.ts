@@ -13,7 +13,7 @@ import {
 })
 export class AppComponent {
   title = 'Winnie Lam';
-  email = 'winnieee.lam@mail.utoronto.ca';
+  email = 'winnieee.lam00@gmail.com';
 
   faInstagram = faInstagram;
   faGithub = faGithub;

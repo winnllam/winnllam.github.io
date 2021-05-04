@@ -6,20 +6,19 @@
       "TypeScript",
       "JavaScript",
       "Python",
-      "C",
       "Java",
-      "Shell Scripting",
-      "SQL",
-      "Ruby"
+      "C",
+      "Bash",
+      "SQL"
     ]
   },
   {
     "category": "Frameworks",
-    "sub": ["Bootstrap", "Angular", "React", "Vue.js", "Express", "Flask"]
+    "sub": ["Bootstrap", "Angular", "React", "Express", "Flask"]
   },
   {
     "category": "Database",
-    "sub": ["SQLite", "MySQL"]
+    "sub": ["MongoDB"]
   },
   {
     "category": "Software/Tools",
@@ -28,7 +27,7 @@
       "Figma",
       "Node.js",
       "JSON",
-      "Docker",
+      "Postman",
       "Concourse CI",
       "Android Studio",
       "Microsoft Office"

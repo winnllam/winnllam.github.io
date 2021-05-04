@@ -26,7 +26,7 @@
 <br />
 
 <div *ngIf="imageLinks.length != 0" class="mediaFrame">
-  <div *ngFor="let link of imageLinks">
+  <div *ngFor="let link of imageLinks" data-aos="fade-up">
     <img class="mediaImg" src="{{ link }}" alt="{{ link }}" />
   </div>
 </div>

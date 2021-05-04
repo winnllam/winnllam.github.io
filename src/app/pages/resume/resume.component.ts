@@ -12,7 +12,7 @@ export class ResumeComponent implements OnInit, AfterViewInit {
   experience: object;
   skills: object;
 
-  year = '3rd';
+  year = '4th';
   cgpa = '3.60';
 
   iframeHeight: number = 500;
