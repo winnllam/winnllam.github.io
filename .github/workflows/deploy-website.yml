@@ -26,6 +26,7 @@ jobs:
       - name: Build website
         run: |
           npm install
+          npm install -g @angular/cli > /dev/null
           ng build --prod --base-href 'https://winnllam.github.io/'
       - name: Deploy to GitHub Pages
         if: success()
