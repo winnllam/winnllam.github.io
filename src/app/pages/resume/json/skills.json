@@ -3,18 +3,16 @@
     "category": "Languages",
     "sub": [
       "HTML/CSS",
-      "TypeScript",
-      "JavaScript",
+      "TypeScript/JavaScript",
       "Python",
       "Java",
       "C",
-      "Bash",
-      "SQL"
+      "Bash"
     ]
   },
   {
     "category": "Frameworks",
-    "sub": ["Bootstrap", "Angular", "React", "Express", "Flask"]
+    "sub": ["Node.js", "Angular", "React", "Express", "Flask", "Django"]
   },
   {
     "category": "Database",
@@ -23,25 +21,15 @@
   {
     "category": "Software/Tools",
     "sub": [
-      "Jira",
+      "Git",
       "Figma",
-      "Node.js",
-      "JSON",
+      "Jira",
+      "Confluence",
       "Postman",
-      "Concourse CI",
+      "Docker",
+      "Photoshop",
       "Android Studio",
       "Microsoft Office"
-    ]
-  },
-  {
-    "category": "Soft Skills",
-    "sub": [
-      "Communication",
-      "Collaboration",
-      "Leadership",
-      "Problem Solving",
-      "Organization",
-      "Mentorship"
     ]
   }
 ]

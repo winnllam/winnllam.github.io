@@ -46,11 +46,12 @@
 </div>
 
 <br />
-<div class="filter" data-aos="fade-up">
+<div class="filter">
   <button
     class="color-btn filter-btn"
     *ngFor="let tag of filter"
-    (click)="filter_projects(tag.match)"
+    id="{{ tag.key }}"
+    (click)="filter_projects(tag.match, tag.key)"
   >
     {{ tag.key }}
   </button>

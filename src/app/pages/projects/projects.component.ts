@@ -29,6 +29,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   featured: Array<any>;
   projects: Array<any>;
   display: Array<any> = [];
+  currentBtn: string = null;
 
   filter = [
     {
@@ -60,7 +61,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       match: ['winner'],
     },
     {
-      key: 'Clear',
+      key: 'CLEAR',
       match: [],
     },
   ];
@@ -131,8 +132,20 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       });
   }
 
-  filter_projects(matches) {
+  filter_projects(matches, id) {
     this.display = matches;
+    // reset old clicked button
+    if (this.currentBtn != null) {
+      document.getElementById(this.currentBtn).style.color = "black";
+      document.getElementById(this.currentBtn).style.backgroundColor = "white";
+    }
+
+    // clear button doesn't need to have toggle indicator
+    if (id != "CLEAR") {
+      document.getElementById(id).style.color = "white";
+      document.getElementById(id).style.backgroundColor = "#a07276";
+      this.currentBtn = id
+    }
   }
 
   checkTags(project_tags) {
