@@ -1,5 +1,13 @@
 [
   {
+    "tags": ["solo", "Web Application"],
+    "image": "wireframe",
+    "name": "MASt Art Studios",
+    "duration": "August 2021 - Present",
+    "desc": "WIP! A art site sharing site side project. Shipping off the art!",
+    "url": "https://github.com/Mast-Art-Studios"
+  },
+  {
     "tags": ["Hackathon", "React", "Python", "Tornado", "team"],
     "image": "1s",
     "name": "1Secret",

@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   arrowsOutside = true;
   highlights: any[];
 
-  position = 'CS Teaching Assistant 🧩 VP of Engineering @ LIVE Competition';
+  position = 'Incoming SDE @ Amazon 🧩 CS TA 🧩 VP of Eng @ LIVE Competition';
   //position = 'Computer Science Specialist Student';
   imageNum = Math.floor(Math.random() * 8) + 1;
   slogan =
