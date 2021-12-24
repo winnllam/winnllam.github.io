@@ -16,12 +16,17 @@ export class MediaComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.loadImages();
+    // TODO: change later if needed
+    window.open(
+      'https://llunamous.artstation.com/',
+      '_blank' // <- This is what makes it open in a new window.
+    );
   }
 
   loadImages() {
     this.mediaService.getImageLinks().subscribe((data) => {
       this.imageLinks = data.urls;
-      console.log(this.imageLinks);
+      // console.log(this.imageLinks);
     });
   }
 
