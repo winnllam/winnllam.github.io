@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import experience from './json/experience.json';
 import skills from './json/skills.json';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 declare var anime: any;
 
 @Component({

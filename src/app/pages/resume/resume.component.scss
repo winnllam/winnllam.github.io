@@ -6,8 +6,20 @@ h2 {
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
+h6 {
+  font-family: "Open Sans Condensed";
+  font-size: 20px;
+  text-align: center;
+}
+
 p {
   margin: 0;
+}
+
+.timeline-box {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 /* RESUME INFO */

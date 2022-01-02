@@ -49,16 +49,17 @@
 
     <h2 class="resume-headers">EXPERIENCE OVERVIEW</h2>
     <div class="resume">
-      <div *ngFor="let exp of experience">
-        <p>
-          <b>{{ exp.role }}</b
-          >, {{ exp.company }}
-        </p>
-        <p>
-          <i>{{ exp.duration }}</i>
-        </p>
-        <br />
-      </div>
+      <mzd-timeline [alternateSide]="true">
+        <mzd-timeline-content *ngFor="let exp of experience">
+          <div class="timeline-box">
+            <h6><b>{{ exp.role }}</b></h6>
+            <h6>{{ exp.company }}</h6>
+            <hr>
+            <small>{{ exp.duration }}</small>
+            <p>{{ exp.summary }}</p>
+          </div>
+        </mzd-timeline-content>
+      </mzd-timeline>
     </div>
   </div>
   <br />
