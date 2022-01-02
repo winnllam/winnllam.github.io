@@ -9,13 +9,14 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { MediaComponent } from './pages/media/media.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home',  component: HomeComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'activities', component: ActivitiesComponent },
   { path: 'media', component: MediaComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
