@@ -6,16 +6,16 @@
     "summary": ""
   },
   {
-    "role": "Vice President of Engineering",
-    "company": "LIVE Competition",
-    "duration": "March 2021 - January 2022",
-    "summary": "Lead a team of 7 in completing tasks for the in-house competition portal."
-  },
-  {
     "role": "Computer Science Teaching Assistant",
     "company": "University of Toronto  Scarborough",
-    "duration": "September 2019 - December 2021",
+    "duration": "September 2019 - Present",
     "summary": "Clarified questions, hosted office hours, and had weekly meetings with the teaching team for first year students."
+  },
+  {
+    "role": "Vice President of Engineering",
+    "company": "LIVE Competition",
+    "duration": "March 2021 - February 2022",
+    "summary": "Lead a team of 7 in completing tasks for the in-house competition portal."
   },
   {
     "role": "Full Stack Developer Co-op",
