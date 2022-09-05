@@ -1,15 +1,21 @@
 [
   {
-    "role": "Software Development Engineer Intern",
-    "company": "Amazon",
-    "duration": "May 2022 - Present",
+    "role": "Computer Science Teaching Assistant",
+    "company": "University of Toronto  Scarborough",
+    "duration": "September 2019 - Present",
+    "summary": "Clarified questions, hosted office hours, and had weekly meetings with the teaching team for first year students."
+  },
+  {
+    "role": "First Year Learning Communities (FLC) Leader",
+    "company": "University of Toronto  Scarborough",
+    "duration": "September 2022 - Present",
     "summary": ""
   },
   {
-    "role": "Computer Science Teaching Assistant",
-    "company": "University of Toronto  Scarborough",
-    "duration": "September 2019 - April 2022",
-    "summary": "Clarified questions, hosted office hours, and had weekly meetings with the teaching team for first year students."
+    "role": "Software Development Engineer Intern",
+    "company": "Amazon",
+    "duration": "May - August 2022",
+    "summary": "Created a cleaner package to remove unused OS release artifacts, saving storage and money."
   },
   {
     "role": "Vice President of Engineering",
