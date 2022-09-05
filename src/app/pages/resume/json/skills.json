@@ -2,10 +2,10 @@
   {
     "category": "Languages",
     "sub": [
-      "HTML/CSS",
-      "TypeScript/JavaScript",
       "Python",
       "Java",
+      "HTML/CSS",
+      "TypeScript/JavaScript",
       "C",
       "Bash"
     ]
@@ -24,8 +24,6 @@
       "Git",
       "Figma",
       "Jira",
-      "Confluence",
-      "Postman",
       "Docker",
       "Photoshop",
       "Android Studio",

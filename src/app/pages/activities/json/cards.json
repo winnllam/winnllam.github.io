@@ -30,20 +30,6 @@
     ]
   },
   {
-    "id": "sa",
-    "logo": "sa_banner.png",
-    "title": "Student Ambassador",
-    "duration": "Oct 2018 - Present",
-    "position": "Tour Guide and Event Staff",
-    "images": [],
-    "desc": [
-      "Starting out as an event staff in first year, I helped set up tear tear down for major events. With a mass volume of people, I guided and clarified inquiries about campus resources, history, university programs, and general university inquires.",
-      "After passing a training session to become a tour guide, I guided prospective students and parents through campus in groups of 5 or more people for 45-minute tours. ",
-      "Tours include knowledge of: campus resources and locations, building locations, campus study spaces, and food options",
-      "I was able to enhance my communication skills while talking and touring with strangers and prospective students. It made me proud knowing that giving a tour to prosective students can impact their decision in deciding their post-secondary school. It's also a lot of fun for me to be able to share my own experiences about this campus, and help ensure they'll have a good time as well. "
-    ]
-  },
-  {
     "id": "wicsm",
     "logo": "wicsm.jpg",
     "title": "Women in Computer Science, Statistics, and Mathematics",
@@ -55,6 +41,20 @@
       "Our role is to provide mentor support the students in many different aspects: resume and interview prep, exam prep, study habits, course and program selection, first year advice, campus tours, resources on campus and online.",
       "To do our duties, we stay connected to the mentees through social events and bi-weekly mentor and mentee meetings, scheduled by the mentors. Communication are also held outside of phyiscal meetings, to assist in resolving needs for immediate help",
       "For the new school year, I am now in charge of managing how the mentorship program will run, utilizing my experience as a mentor. I host events for mentors and mentees to meet up, to either have productive discussions on how to succeed or just to hang out with people."
+    ]
+  },
+  {
+    "id": "sa",
+    "logo": "sa_banner.png",
+    "title": "Student Ambassador",
+    "duration": "Oct 2018 - Present",
+    "position": "Tour Guide and Event Staff",
+    "images": [],
+    "desc": [
+      "Starting out as an event staff in first year, I helped set up tear tear down for major events. With a mass volume of people, I guided and clarified inquiries about campus resources, history, university programs, and general university inquires.",
+      "After passing a training session to become a tour guide, I guided prospective students and parents through campus in groups of 5 or more people for 45-minute tours. ",
+      "Tours include knowledge of: campus resources and locations, building locations, campus study spaces, and food options",
+      "I was able to enhance my communication skills while talking and touring with strangers and prospective students. It made me proud knowing that giving a tour to prosective students can impact their decision in deciding their post-secondary school. It's also a lot of fun for me to be able to share my own experiences about this campus, and help ensure they'll have a good time as well. "
     ]
   },
   {
