@@ -15,19 +15,24 @@ export class HomeComponent implements OnInit, AfterViewInit {
   arrowsOutside = true;
   highlights: any[];
 
-  position = 'CS TA 🧩 FLC Leader @ UTSC';
+  position = "Full Stack Developer @ SuperVisas 🧩 UofT CS '23";
   //position = 'Computer Science Specialist Student';
   imageNum = Math.floor(Math.random() * 8) + 1;
   slogan =
-    'An aspiring 4th year computer science student with a passion for aesthetics, creation, and technology.';
+    'I have expertise in full stack and web development from various school and personal projects, \
+    as well as a love for designing and building things on the web. I have contributed to and built \
+    many large-scale applications, ranging from database setup and management, API creation and maintenance, \
+    frontend design and development, and testing. I have worked in various teams in an agile setting, \
+    from both a developer and leadership standpoint. I am excited to apply my skills and knowledge to \
+    new and exciting opportunities.';
 
-  images = [
-    { path: 'assets/photography/1.jpg' },
-    { path: 'assets/photography/2.jpg' },
-    { path: 'assets/photography/3.jpg' },
-    { path: 'assets/photography/4.jpg' },
-    { path: 'assets/photography/5.jpg' },
-  ];
+  // images = [
+  //   { path: 'assets/photography/1.jpg' },
+  //   { path: 'assets/photography/2.jpg' },
+  //   { path: 'assets/photography/3.jpg' },
+  //   { path: 'assets/photography/4.jpg' },
+  //   { path: 'assets/photography/5.jpg' },
+  // ];
 
   constructor() {
     this.highlights = highlights;
