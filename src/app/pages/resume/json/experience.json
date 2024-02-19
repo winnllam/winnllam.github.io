@@ -1,14 +1,26 @@
 [
   {
+    "role": "Full Stack Developer",
+    "company": "SuperVisas",
+    "duration": "September 2023 - Present",
+    "summary": ""
+  },
+  {
+    "role": "Workshop Developer",
+    "company": "HER CODE CAMP",
+    "duration": "September - December 2023",
+    "summary": "Designed and facilitated weekly 1-hour workshop sessions for 4 weeks for a group of 20 students to teach topics about web design, HTML, CSS, and JavaScript"
+  },
+  {
     "role": "Computer Science Teaching Assistant",
     "company": "University of Toronto Scarborough",
-    "duration": "September 2019 - Present",
+    "duration": "September 2019 - April 2023",
     "summary": "Clarified questions, hosted office hours, and had weekly meetings with the teaching team for first year students."
   },
   {
     "role": "First Year Learning Communities (FLC) Leader",
     "company": "University of Toronto Scarborough",
-    "duration": "September 2022 - Present",
+    "duration": "September 2022 - April 2023",
     "summary": ""
   },
   {
