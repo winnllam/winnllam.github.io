@@ -1,5 +1,6 @@
-import Buttons from "./Buttons";
 import "./Header.css";
+import Buttons from "./Buttons";
+import Socials from "./Socials";
 import headshot from "../../assets/headshot.png";
 
 function Header() {
@@ -14,6 +15,7 @@ function Header() {
           alt="headshot"
           className="mx-auto mb-5 md:max-w-sm lg:max-w-md"
         />
+        <Socials />
         <Buttons />
       </div>
     </header>

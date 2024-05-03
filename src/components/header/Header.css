@@ -1,0 +1,17 @@
+.socials::before {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: theme("colors.white");
+}
+
+.socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: theme("colors.white");
+}
+
+.social:hover {
+  color: theme("colors.orchid");
+}
