@@ -9,7 +9,9 @@ function Header() {
       <div className="container p-20 text-center font-mono">
         <h3 className="text-white p-5">Hello, I'm</h3>
         <h1 className="text-orchid p-10">Winnie Lam</h1>
-        <h4 className="text-white">Full-Stack Software Engineer</h4>
+        <h4 className="text-white">
+          <i>Full-Stack Software Engineer</i>
+        </h4>
         <img
           src={headshot}
           alt="headshot"

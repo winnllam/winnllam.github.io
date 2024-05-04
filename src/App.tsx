@@ -12,7 +12,9 @@ function App() {
     <>
       <Header />
       <Navigation />
+      <hr className="w-48 h-1 mx-auto my-4 bg-pink border-0 rounded md:mt-10 md:mb-20" />
       <About />
+      <hr className="w-48 h-1 mx-auto my-4 bg-pink border-0 rounded md:mt-10 md:mb-20" />
       <Experience />
       <Projects />
       <Contacts />

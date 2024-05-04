@@ -6,11 +6,19 @@
   h1 {
     @apply text-6xl;
   }
+  h2 {
+    @apply text-3xl;
+    @apply italic;
+  }
   h3 {
     @apply text-xl;
   }
   h4 {
     @apply text-lg;
+  }
+  p {
+    @apply text-sm;
+    @apply text-white;
   }
 }
 
@@ -47,4 +55,12 @@ code {
 
 .btn-orchid-outline:hover {
   @apply bg-orchid text-black;
+}
+
+.box {
+  @apply bg-lavender p-6 rounded;
+}
+
+.box-outline {
+  @apply bg-transparent text-lavender p-6 border-4 border-lavender rounded;
 }
