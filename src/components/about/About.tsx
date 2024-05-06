@@ -16,6 +16,7 @@ function About() {
           <p>
             <i>University of Toronto</i>
           </p>
+          <p>cGPA: 3.49/4.0</p>
         </div>
         <div className="box-outline basis-1/3 m-3">
           <div className="box-header">
