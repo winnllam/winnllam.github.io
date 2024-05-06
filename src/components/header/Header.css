@@ -1,3 +1,7 @@
+.socials {
+  z-index: -1;
+}
+
 .socials::before {
   content: "";
   width: 1px;
