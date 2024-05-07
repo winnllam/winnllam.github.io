@@ -7,7 +7,7 @@ export const EXPERIENCES = [
     company: "SuperVisas",
     role: "Full Stack Developer",
     dates: "September 2023 - April 2024",
-    description: "some work desc here",
+    description: "",
   },
   {
     id: 11,
@@ -15,7 +15,8 @@ export const EXPERIENCES = [
     company: "HER CODE CAMP",
     role: "Workshop Developer",
     dates: "September 2023 - December 2023",
-    description: "some work desc here",
+    description:
+      "Developed and facilitated a web development workshop for female high school students who have little to no experience in coding and web development.",
   },
   {
     id: 10,
@@ -59,7 +60,7 @@ export const EXPERIENCES = [
     role: "Full Stack Developer Co-op",
     dates: "May 2021 - August 2021",
     description:
-      "Assisted with chatbot handoff to live agent process, and resolved high priority, client impacting bugs.",
+      "Third work term; Assisted with chatbot handoff to live agent process, and resolved high priority, client impacting bugs.",
   },
   {
     id: 5,

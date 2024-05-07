@@ -22,13 +22,13 @@ function Experience() {
                       <FaSchool className="text-black" />
                     )}
                   </span>
-                  <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+                  <h3 className="flex items-center mb-1 text-lg font-semibold">
                     {item.company} |&nbsp;<i>{item.role}</i>
                   </h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+                  <time className="block mb-2 text-sm font-normal leading-none text-gray">
                     {item.dates}
                   </time>
-                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                  <p className="mb-4 text-base font-normal">
                     {item.description}
                   </p>
                 </li>
