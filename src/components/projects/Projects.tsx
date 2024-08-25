@@ -29,11 +29,14 @@ function Projects() {
                 alt={item.title}
                 className="w-full object-contain max-h-48"
               ></img>
-              <p className="mt-4 mb-2">{item.description}</p>
+              <p className="mt-4 mb-4">{item.description}</p>
             </div>
+            <p className="text-center mb-4">
+              <i>{item.tech}</i>
+            </p>
             <div className="flex justify-center items-center">
               <a href={item.link} target="_blank" rel="noreferrer">
-                <BsGithub className="text-3xl" />
+                <BsGithub className="text-3xl text-black" />
               </a>
             </div>
           </div>
