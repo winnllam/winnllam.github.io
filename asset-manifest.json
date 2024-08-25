@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da978723.css",
+    "main.js": "/static/js/main.3707ff5c.js",
+    "static/js/453.edfde08e.chunk.js": "/static/js/453.edfde08e.chunk.js",
+    "static/media/headshot.png": "/static/media/headshot.ca3d82db4c8470a891be.png",
+    "static/media/Political_Chat_Bot.png": "/static/media/Political_Chat_Bot.046629a1546d05d98113.png",
+    "static/media/Find_Dining.png": "/static/media/Find_Dining.7db7a0efaa1832304c68.png",
+    "static/media/Streamline.png": "/static/media/Streamline.98990b1e6d2578912610.png",
+    "static/media/Divide_and_Conquer.png": "/static/media/Divide_and_Conquer.722a9463aae38f4eb9ac.png",
+    "static/media/Personal_Website.png": "/static/media/Personal_Website.63225f5b85a64f8a7519.png",
+    "static/media/Pineapple.png": "/static/media/Pineapple.7b13023289cf4be1c0c5.png",
+    "static/media/Web_Gallery.png": "/static/media/Web_Gallery.1834e4ba30e9b0c4590a.png",
+    "static/media/Doodle_Jump.png": "/static/media/Doodle_Jump.5cd86489e3d5aed63f13.png",
+    "static/media/wireframe.png": "/static/media/wireframe.e25319e0f3ecff67583a.png",
+    "static/media/1Secret.png": "/static/media/1Secret.425291c6a47db44b25c2.png",
+    "index.html": "/index.html",
+    "main.da978723.css.map": "/static/css/main.da978723.css.map",
+    "main.3707ff5c.js.map": "/static/js/main.3707ff5c.js.map",
+    "453.edfde08e.chunk.js.map": "/static/js/453.edfde08e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da978723.css",
+    "static/js/main.3707ff5c.js"
+  ]
+}
