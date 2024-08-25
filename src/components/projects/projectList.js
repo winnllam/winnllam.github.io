@@ -1,5 +1,12 @@
 export const PROJECTS = [
   {
+    title: "Personal Website",
+    description:
+      "My personal portfolio site you are currently looking at! Newly revamped in 2024.",
+    link: "https://github.com/winnllam/winnllam.github.io",
+    tech: "React, TypeScript, Tailwind",
+  },
+  {
     title: "Divide and Conquer",
     description:
       "Backend-focused coding competition application (similar to Binarysearch and Leetcode) with support for multiple users at a time, real-time updates and execution of code programs.",
@@ -9,7 +16,7 @@ export const PROJECTS = [
   {
     title: "Web Gallery",
     description:
-      "An online photo gallery application featuring image uploads and commenting.",
+      "An online photo gallery application featuring user profile, image uploads, and commenting.",
     link: "https://github.com/winnllam/c09-a3",
     tech: "HTML, CSS, JavaScript, Express, Node.js",
   },

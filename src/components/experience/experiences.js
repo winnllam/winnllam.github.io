@@ -6,7 +6,7 @@ export const EXPERIENCES = [
     type: "work",
     company: "EV.com",
     role: "Software Engineer",
-    dates: "May - September 2024",
+    dates: "May 2024 - September 2024",
     description: "",
   },
   {

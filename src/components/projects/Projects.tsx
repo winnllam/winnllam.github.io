@@ -27,7 +27,7 @@ function Projects() {
               <img
                 src={images(`./${item.title.replace(/\s+/g, "_")}.png`)}
                 alt={item.title}
-                className="w-full object-contain max-h-48"
+                className="w-full object-contain max-h-48 drop-shadow-lg"
               ></img>
               <p className="mt-4 mb-4">{item.description}</p>
             </div>
