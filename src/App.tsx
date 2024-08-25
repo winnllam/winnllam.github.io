@@ -4,7 +4,7 @@ import Navigation from "./components/navigation/Navigation";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
-import Contacts from "./components/contacts/Contacts";
+import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 const Hr: React.FC = () => (
@@ -22,7 +22,8 @@ function App() {
       <Experience />
       <Hr />
       <Projects />
-      <Contacts />
+      <Hr />
+      <Contact />
       <Footer />
     </>
   );

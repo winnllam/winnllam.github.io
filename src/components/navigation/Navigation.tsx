@@ -44,7 +44,7 @@ function useActiveSection(sections: string[], initialSection: string) {
 }
 
 function Navigation() {
-  const sections = ["#home", "#about", "#experience", "#projects", "#contacts"];
+  const sections = ["#home", "#about", "#experience", "#projects", "#contact"];
   const [active, setActive] = useActiveSection(sections, "#home");
 
   return (
@@ -78,9 +78,9 @@ function Navigation() {
         <FaLaptopCode />
       </a>
       <a
-        href="#contacts"
-        onClick={() => setActive("#contacts")}
-        className={active === "#contacts" ? "active" : ""}
+        href="#contact"
+        onClick={() => setActive("#contact")}
+        className={active === "#contact" ? "active" : ""}
       >
         <BiMessageSquareDetail />
       </a>
