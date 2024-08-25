@@ -7,16 +7,20 @@ import Projects from "./components/projects/Projects";
 import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
 
+const Hr: React.FC = () => (
+  <hr className="w-48 h-1 mx-auto my-4 bg-pink border-0 rounded" />
+);
+
 function App() {
   return (
     <>
       <Header />
       <Navigation />
-      <hr className="w-48 h-1 mx-auto my-4 bg-pink border-0 rounded md:mt-10 md:mb-20" />
+      <Hr />
       <About />
-      <hr className="w-48 h-1 mx-auto my-4 bg-pink border-0 rounded md:mt-10 md:mb-20" />
+      <Hr />
       <Experience />
-      <hr className="w-48 h-1 mx-auto my-4 bg-pink border-0 rounded md:mt-10 md:mb-20" />
+      <Hr />
       <Projects />
       <Contacts />
       <Footer />
