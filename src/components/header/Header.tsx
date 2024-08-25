@@ -2,6 +2,7 @@ import "./Header.css";
 import Buttons from "./Buttons";
 import Socials from "./Socials";
 import headshot from "../../assets/headshot.png";
+import Typewriter from "typewriter-effect";
 
 function Header() {
   return (
@@ -10,7 +11,22 @@ function Header() {
         <h3 className="text-white p-5">Hello, I'm</h3>
         <h1 className="text-orchid p-10">Winnie Lam</h1>
         <h4 className="text-white">
-          <i>Full-Stack Software Engineer</i>
+          <i>
+            <Typewriter
+              options={{
+                strings: [
+                  "Full-stack Software Engineer",
+                  "Open Source Contributor",
+                  "Hobbyist Artist",
+                  "Eternal Learner",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 70,
+                deleteSpeed: 30,
+              }}
+            />
+          </i>
         </h4>
         <img
           src={headshot}
