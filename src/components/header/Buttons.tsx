@@ -6,7 +6,9 @@ function Buttons() {
       <a href={resumeUrl} target="_blank" rel="noreferrer">
         <button className="btn btn-orchid m-2">Resume</button>
       </a>
-      <button className="btn btn-orchid-outline m-2">Contact</button>
+      <a href="mailto:winnie.lam540@gmail.com">
+        <button className="btn btn-orchid-outline m-2">Contact</button>
+      </a>
     </div>
   );
 }
