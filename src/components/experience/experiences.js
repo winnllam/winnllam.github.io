@@ -1,6 +1,14 @@
-export const RELEVANT = [12, 11, 9, 8, 7, 6, 3, 2];
+export const RELEVANT = [13, 12, 11, 9, 8, 7, 6, 3, 2];
 
 export const EXPERIENCES = [
+  {
+    id: 13,
+    type: "work",
+    company: "EV.com",
+    role: "Software Engineer",
+    dates: "May - September 2024",
+    description: "",
+  },
   {
     id: 12,
     type: "work",
