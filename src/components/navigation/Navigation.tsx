@@ -4,16 +4,55 @@ import { BiUser } from "react-icons/bi";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { BiMessageSquareDetail } from "react-icons/bi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+function useActiveSection(sections: string[], initialSection: string) {
+  const [activeSection, setActiveSection] = useState<string>(initialSection);
+
+  useEffect(() => {
+    const observerOptions = {
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(`#${entry.target.id}`);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((sectionId) => {
+      const element = document.querySelector(sectionId);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      sections.forEach((sectionId) => {
+        const element = document.querySelector(sectionId);
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, [sections]);
+
+  return [activeSection, setActiveSection] as const;
+}
 
 function Navigation() {
-  const [active, setActive] = useState("#");
+  const sections = ["#home", "#about", "#experience", "#projects", "#contacts"];
+  const [active, setActive] = useActiveSection(sections, "#home");
+
   return (
     <nav>
       <a
         href="#home"
-        onClick={() => setActive("#")}
-        className={active === "#" ? "active" : ""}
+        onClick={() => setActive("#home")}
+        className={active === "#home" ? "active" : ""}
       >
         <AiOutlineHome />
       </a>
