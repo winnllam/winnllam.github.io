@@ -1,5 +1,6 @@
 import "./Contact.css";
 import { useState } from "react";
+import { send } from "@emailjs/browser";
 import { FiSend } from "react-icons/fi";
 
 function Contact() {
@@ -19,7 +20,17 @@ function Contact() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log("Form data submitted:", formData);
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID!;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID!;
+    const userId = process.env.REACT_APP_EMAILJS_USER_ID!;
+
+    send(serviceId, templateId, formData, userId)
+      .then((response) => {
+        // console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        // console.log("FAILED...", err);
+      });
     setFormData({ name: "", email: "", message: "" });
   };
 
