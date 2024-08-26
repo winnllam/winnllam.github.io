@@ -1,4 +1,4 @@
-export const RELEVANT = [13, 12, 11, 9, 8, 7, 6, 3, 2];
+export const RELEVANT = [13, 12, 11, 8, 7, 6, 3, 2];
 
 export const EXPERIENCES = [
   {
@@ -7,7 +7,8 @@ export const EXPERIENCES = [
     company: "EV.com",
     role: "Software Engineer",
     dates: "May 2024 - September 2024",
-    description: "",
+    description:
+      "Orchestrated AWS Lambda migration to Docker, automated dealership report generation, implemented vehicle metadata tagging, and developed a dynamic gas savings calculator, improving deployment efficiency, data accessibility, search accuracy, and user engagement.",
   },
   {
     id: 12,
@@ -15,7 +16,8 @@ export const EXPERIENCES = [
     company: "SuperVisas",
     role: "Full Stack Developer",
     dates: "September 2023 - April 2024",
-    description: "",
+    description:
+      "Developed AI-driven tools for document generation and resume scanning, significantly reducing writing and data entry times, and implemented backend enhancements in Django to improve site reliability and reduce errors.",
   },
   {
     id: 11,
@@ -41,7 +43,8 @@ export const EXPERIENCES = [
     company: "University of Toronto Scarborough",
     role: "First Year Learning Communities (FLC) Leader",
     dates: "September 2022 - April 2023",
-    description: "",
+    description:
+      "Supported first-year university students' transition by providing guidance, answering questions, and co-facilitating weekly meetings, workshops, and events.",
   },
   {
     id: 8,

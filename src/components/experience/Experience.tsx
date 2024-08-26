@@ -22,8 +22,8 @@ function Experience() {
                       <FaSchool className="text-black" />
                     )}
                   </span>
-                  <h3 className="flex items-center mb-1 text-lg font-semibold">
-                    {item.company} |&nbsp;<i>{item.role}</i>
+                  <h3 className="items-center mb-1 text-lg font-semibold">
+                    {item.company} | <i>{item.role}</i>
                   </h3>
                   <time className="block mb-2 text-sm font-normal leading-none text-gray">
                     {item.dates}
