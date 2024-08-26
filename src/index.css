@@ -72,3 +72,13 @@ code {
 .box-outline {
   @apply bg-transparent text-lavender p-6 border-4 border-lavender rounded;
 }
+
+.box-outline-orchid {
+  @apply bg-transparent text-pink w-28 h-28 p-4 border-4 border-pink rounded flex items-center justify-center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.box-outline-orchid:hover {
+  @apply text-orchid border-orchid;
+  transform: scale(1.1);
+}
