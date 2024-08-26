@@ -1,5 +1,7 @@
 import "./About.css";
-import { FC, useState } from "react";
+import { FC, useCallback, useEffect, useState } from "react";
+import GitHubCalendar, { Activity, ThemeInput } from "react-github-calendar";
+import { isAfter, subMonths } from "date-fns";
 import { SKILLS as skills, TOOLS as tools } from "./tools";
 import { GiGraduateCap } from "react-icons/gi";
 import { BsFillTrophyFill } from "react-icons/bs";
@@ -31,15 +33,57 @@ const IconCard: FC<IconProps> = ({ name, icon, type }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {isHovered ? (
-        <span className="text-lg">{name}</span>
+        <span className="text-xs md:text-lg">{name}</span>
       ) : (
-        <IconComponent className="text-6xl" />
+        <IconComponent className="text-3xl md:text-6xl" />
       )}
     </div>
   );
 };
 
+const breakpoints = [
+  { maxWidth: 480, shownMonths: 3 },
+  { maxWidth: 768, shownMonths: 6 },
+  { maxWidth: 1024, shownMonths: 9 },
+  { maxWidth: Infinity, shownMonths: 12 },
+];
+
 function About() {
+  const [shownMonths, setShownMonths] = useState(3);
+
+  useEffect(() => {
+    const updateShownMonths = () => {
+      const width = window.innerWidth;
+      for (let i = 0; i < breakpoints.length; i++) {
+        const { maxWidth } = breakpoints[i];
+        if (width <= maxWidth) {
+          setShownMonths(breakpoints[i].shownMonths);
+          break;
+        }
+      }
+    };
+
+    updateShownMonths();
+
+    window.addEventListener("resize", updateShownMonths);
+    return () => window.removeEventListener("resize", updateShownMonths);
+  }, []);
+
+  const filterDataFn = useCallback(
+    (activities: Activity[]) => {
+      const firstDate = subMonths(new Date(), shownMonths);
+
+      return activities.filter((activity) => {
+        return isAfter(activity.date, firstDate);
+      });
+    },
+    [shownMonths]
+  );
+
+  const explicitTheme: ThemeInput = {
+    dark: ["#383838", "#F6C0D0"],
+  };
+
   return (
     <div id="about">
       <h2 className="text-center font-mono m-10 text-orchid">About Me</h2>
@@ -83,6 +127,16 @@ function About() {
           leadership standpoint. I am excited to apply my skills and knowledge
           to new and exciting opportunities.
         </p>
+      </div>
+      <div className="container py-10 flex justify-center text-white">
+        <GitHubCalendar
+          username="winnllam"
+          colorScheme="dark"
+          theme={explicitTheme}
+          blockRadius={5}
+          hideTotalCount
+          transformData={filterDataFn}
+        />
       </div>
       <div className="container px-12 sm:px-36 flex flex-col items-center font-mono">
         <h3>Skill Set</h3>

@@ -78,7 +78,7 @@ code {
 }
 
 .box-outline-orchid {
-  @apply bg-transparent text-pink w-28 h-28 p-4 border-4 border-pink rounded flex items-center justify-center transition duration-200 ease-in-out;
+  @apply bg-transparent text-pink w-12 h-12 md:w-28 md:h-28 p-1 md:p-4 border-4 border-pink rounded flex items-center justify-center transition duration-200 ease-in-out;
 }
 
 .box-outline-orchid:hover {
