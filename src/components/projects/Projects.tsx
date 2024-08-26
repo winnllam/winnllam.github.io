@@ -1,6 +1,7 @@
 import "./Projects.css";
 import { PROJECTS as data } from "./projectList";
 import { BsGithub } from "react-icons/bs";
+import { IoLink } from "react-icons/io5";
 
 declare const require: {
   context: (
@@ -34,10 +35,15 @@ function Projects() {
             <p className="text-center mb-4">
               <i>{item.tech}</i>
             </p>
-            <div className="flex justify-center items-center">
-              <a href={item.link} target="_blank" rel="noreferrer">
-                <BsGithub className="text-3xl text-black" />
+            <div className="flex justify-center items-center space-x-4">
+              <a href={item.repo} target="_blank" rel="noreferrer">
+                <BsGithub className="text-3xl text-black hover:text-orchid icon " />
               </a>
+              {item.link && (
+                <a href={item.link} target="_blank" rel="noreferrer">
+                  <IoLink className="text-3xl text-black hover:text-orchid icon" />
+                </a>
+              )}
             </div>
           </div>
         ))}

@@ -45,7 +45,7 @@ function About() {
       <div className="container text-center px-12 sm:px-36 flex flex-col lg:flex-row items-stretch font-mono">
         <div className="box-outline basis-1/3 m-3 ">
           <div className="box-header">
-            <GiGraduateCap className="icon" />
+            <GiGraduateCap className="highlight-icon" />
             <h3>Degree</h3>
           </div>
           <p>BS (Hons) Computer Science</p>
@@ -56,7 +56,7 @@ function About() {
         </div>
         <div className="box-outline basis-1/3 m-3">
           <div className="box-header">
-            <BsFillTrophyFill className="icon" />
+            <BsFillTrophyFill className="highlight-icon" />
             <h3>Highlights</h3>
           </div>
           <p>* deCODE Participant - 1Password</p>
@@ -65,7 +65,7 @@ function About() {
         </div>
         <div className="box-outline basis-1/3 m-3">
           <div className="box-header">
-            <BsPeopleFill className="icon" />
+            <BsPeopleFill className="highlight-icon" />
             <h3>Currently</h3>
           </div>
           <p>Seeking full-time employment!</p>

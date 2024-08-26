@@ -10,7 +10,7 @@ function Socials() {
         rel="noreferrer"
         className="social"
       >
-        <BsLinkedin />
+        <BsLinkedin className="icon" />
       </a>
       <a
         href="https://github.com/winnllam"
@@ -18,7 +18,7 @@ function Socials() {
         rel="noreferrer"
         className="social"
       >
-        <BsGithub />
+        <BsGithub className="icon" />
       </a>
       <a
         href="https://www.artstation.com/llunamous"
@@ -26,7 +26,7 @@ function Socials() {
         rel="noreferrer"
         className="social"
       >
-        <BsBrushFill />
+        <BsBrushFill className="icon" />
       </a>
     </div>
   );

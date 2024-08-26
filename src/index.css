@@ -46,7 +46,11 @@ code {
 }
 
 .btn {
-  @apply font-bold py-2 px-6 rounded;
+  @apply font-bold py-2 px-6 rounded transition duration-300 ease-in-out;
+}
+
+.btn:hover {
+  @apply scale-110;
 }
 
 .btn-orchid {
@@ -74,11 +78,17 @@ code {
 }
 
 .box-outline-orchid {
-  @apply bg-transparent text-pink w-28 h-28 p-4 border-4 border-pink rounded flex items-center justify-center;
-  transition: transform 0.2s ease-in-out;
+  @apply bg-transparent text-pink w-28 h-28 p-4 border-4 border-pink rounded flex items-center justify-center transition duration-200 ease-in-out;
 }
 
 .box-outline-orchid:hover {
-  @apply text-orchid border-orchid;
-  transform: scale(1.1);
+  @apply text-orchid border-orchid scale-110;
+}
+
+.icon {
+  @apply transition duration-300 ease-in-out;
+}
+
+.icon:hover {
+  @apply scale-125;
 }

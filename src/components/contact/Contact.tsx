@@ -91,7 +91,7 @@ function Contact() {
         </div>
         <button
           type="submit"
-          className="w-full flex items-center justify-center bg-lavender text-white font-semibold py-2 px-4 rounded-md hover:bg-orchid hover:text-black"
+          className="btn w-full flex items-center justify-center bg-lavender text-white font-semibold py-2 px-4 hover:bg-orchid hover:text-black"
         >
           <span className="mr-1">Send</span>
           <FiSend />

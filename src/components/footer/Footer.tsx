@@ -14,7 +14,7 @@ function Footer() {
             rel="noreferrer"
             className="social"
           >
-            <BsLinkedin />
+            <BsLinkedin className="icon" />
           </a>
           <a
             href="https://github.com/winnllam"
@@ -22,7 +22,7 @@ function Footer() {
             rel="noreferrer"
             className="social"
           >
-            <BsGithub />
+            <BsGithub className="icon" />
           </a>
           <a
             href="https://www.artstation.com/llunamous"
@@ -30,7 +30,7 @@ function Footer() {
             rel="noreferrer"
             className="social"
           >
-            <BsBrushFill />
+            <BsBrushFill className="icon" />
           </a>
         </div>
         <p>Created with ❤️ by Winnie Lam</p>
