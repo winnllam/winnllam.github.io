@@ -2,7 +2,8 @@ import "./About.css";
 import { FC, useState } from "react";
 import { SKILLS as skills, TOOLS as tools } from "./tools";
 import { GiGraduateCap } from "react-icons/gi";
-import { BsPeopleFill, BsFillTrophyFill } from "react-icons/bs";
+import { BsFillTrophyFill } from "react-icons/bs";
+import { BiCurrentLocation } from "react-icons/bi";
 import * as DiIcons from "react-icons/di";
 import * as FaIcons from "react-icons/fa";
 import * as SiIcons from "react-icons/si";
@@ -65,7 +66,7 @@ function About() {
         </div>
         <div className="box-outline basis-1/3 m-3">
           <div className="box-header">
-            <BsPeopleFill className="highlight-icon" />
+            <BiCurrentLocation className="highlight-icon" />
             <h3>Currently</h3>
           </div>
           <p>Seeking full-time employment!</p>
