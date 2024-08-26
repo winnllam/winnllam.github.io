@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2021f1c2.css",
-    "main.js": "/static/js/main.227f8926.js",
+    "main.css": "/static/css/main.2585c5f4.css",
+    "main.js": "/static/js/main.2b01aba1.js",
     "static/js/453.edfde08e.chunk.js": "/static/js/453.edfde08e.chunk.js",
     "static/media/headshot.png": "/static/media/headshot.ca3d82db4c8470a891be.png",
     "static/media/Political_Chat_Bot.png": "/static/media/Political_Chat_Bot.046629a1546d05d98113.png",
@@ -15,12 +15,12 @@
     "static/media/wireframe.png": "/static/media/wireframe.e25319e0f3ecff67583a.png",
     "static/media/1Secret.png": "/static/media/1Secret.425291c6a47db44b25c2.png",
     "index.html": "/index.html",
-    "main.2021f1c2.css.map": "/static/css/main.2021f1c2.css.map",
-    "main.227f8926.js.map": "/static/js/main.227f8926.js.map",
+    "main.2585c5f4.css.map": "/static/css/main.2585c5f4.css.map",
+    "main.2b01aba1.js.map": "/static/js/main.2b01aba1.js.map",
     "453.edfde08e.chunk.js.map": "/static/js/453.edfde08e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2021f1c2.css",
-    "static/js/main.227f8926.js"
+    "static/css/main.2585c5f4.css",
+    "static/js/main.2b01aba1.js"
   ]
 }
