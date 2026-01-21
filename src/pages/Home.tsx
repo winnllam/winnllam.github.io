@@ -627,99 +627,99 @@ function Projects() {
   );
 }
 
-function ArtSection() {
-  return (
-    <section id="art" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Artwork
-        </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {artPieces.slice(0, 3).map((piece, index) => (
-            <BrowserWindow key={index}>
-              <div className="aspect-square bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center overflow-hidden">
-                {piece.image ? (
-                  <img
-                    src={piece.image}
-                    alt={piece.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <span className="text-purple-400">Preview</span>
-                )}
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                  {piece.title}
-                </h3>
-                {piece.medium && (
-                  <span className="px-2 py-1 bg-pink-100 text-pink-700 text-xs rounded-full">
-                    {piece.medium}
-                  </span>
-                )}
-              </div>
-            </BrowserWindow>
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <Link
-            to="/art"
-            className="inline-block px-8 py-3 border border-purple-300 text-purple-700 rounded-lg hover:bg-purple-50 transition-colors"
-          >
-            View All Artwork
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
+// function ArtSection() {
+//   return (
+//     <section id="art" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+//       <div className="max-w-6xl mx-auto">
+//         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+//           Artwork
+//         </h2>
+//         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+//           {artPieces.slice(0, 3).map((piece, index) => (
+//             <BrowserWindow key={index}>
+//               <div className="aspect-square bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center overflow-hidden">
+//                 {piece.image ? (
+//                   <img
+//                     src={piece.image}
+//                     alt={piece.title}
+//                     className="w-full h-full object-cover"
+//                   />
+//                 ) : (
+//                   <span className="text-purple-400">Preview</span>
+//                 )}
+//               </div>
+//               <div className="p-4">
+//                 <h3 className="text-lg font-semibold text-gray-900 mb-1">
+//                   {piece.title}
+//                 </h3>
+//                 {piece.medium && (
+//                   <span className="px-2 py-1 bg-pink-100 text-pink-700 text-xs rounded-full">
+//                     {piece.medium}
+//                   </span>
+//                 )}
+//               </div>
+//             </BrowserWindow>
+//           ))}
+//         </div>
+//         <div className="text-center mt-8">
+//           <Link
+//             to="/art"
+//             className="inline-block px-8 py-3 border border-purple-300 text-purple-700 rounded-lg hover:bg-purple-50 transition-colors"
+//           >
+//             View All Artwork
+//           </Link>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
-function DesignSection() {
-  return (
-    <section id="design" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Designs
-        </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {designPieces.slice(0, 3).map((piece, index) => (
-            <BrowserWindow key={index}>
-              <div className="aspect-video bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center overflow-hidden">
-                {piece.image ? (
-                  <img
-                    src={piece.image}
-                    alt={piece.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <span className="text-purple-400">Preview</span>
-                )}
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                  {piece.title}
-                </h3>
-                {piece.category && (
-                  <span className="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">
-                    {piece.category}
-                  </span>
-                )}
-              </div>
-            </BrowserWindow>
-          ))}
-        </div>
-        <div className="text-center mt-8">
-          <Link
-            to="/design"
-            className="inline-block px-8 py-3 border border-purple-300 text-purple-700 rounded-lg hover:bg-purple-50 transition-colors"
-          >
-            View All Designs
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
+// function DesignSection() {
+//   return (
+//     <section id="design" className="py-20 px-4 sm:px-6 lg:px-8">
+//       <div className="max-w-6xl mx-auto">
+//         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+//           Designs
+//         </h2>
+//         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+//           {designPieces.slice(0, 3).map((piece, index) => (
+//             <BrowserWindow key={index}>
+//               <div className="aspect-video bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center overflow-hidden">
+//                 {piece.image ? (
+//                   <img
+//                     src={piece.image}
+//                     alt={piece.title}
+//                     className="w-full h-full object-cover"
+//                   />
+//                 ) : (
+//                   <span className="text-purple-400">Preview</span>
+//                 )}
+//               </div>
+//               <div className="p-4">
+//                 <h3 className="text-lg font-semibold text-gray-900 mb-1">
+//                   {piece.title}
+//                 </h3>
+//                 {piece.category && (
+//                   <span className="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">
+//                     {piece.category}
+//                   </span>
+//                 )}
+//               </div>
+//             </BrowserWindow>
+//           ))}
+//         </div>
+//         <div className="text-center mt-8">
+//           <Link
+//             to="/design"
+//             className="inline-block px-8 py-3 border border-purple-300 text-purple-700 rounded-lg hover:bg-purple-50 transition-colors"
+//           >
+//             View All Designs
+//           </Link>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 function Contact() {
   return (
