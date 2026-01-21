@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import { HiOutlineHome, HiOutlineUser, HiOutlineComputerDesktop, HiOutlineEnvelope, HiOutlinePaintBrush, HiOutlineSparkles } from "react-icons/hi2";
+import { HiOutlineHome, HiOutlineUser, HiOutlineComputerDesktop, HiOutlineEnvelope /*, HiOutlinePaintBrush, HiOutlineSparkles */ } from "react-icons/hi2";
 
 export default function Layout() {
   const [showNav, setShowNav] = useState(false);
@@ -21,7 +21,7 @@ export default function Layout() {
       }
 
       // Determine active section based on scroll position
-      const sections = ["about", "projects", "art", "design", "contact"];
+      const sections = ["about", "projects", /* "art", "design", */ "contact"];
       let foundSection = false;
       for (const section of [...sections].reverse()) {
         const element = document.getElementById(section);
@@ -81,14 +81,14 @@ export default function Layout() {
       id: "projects",
       icon: <HiOutlineComputerDesktop className="w-5 h-5" />,
     },
-    {
-      id: "art",
-      icon: <HiOutlinePaintBrush className="w-5 h-5" />,
-    },
-    {
-      id: "design",
-      icon: <HiOutlineSparkles className="w-5 h-5" />,
-    },
+    // {
+    //   id: "art",
+    //   icon: <HiOutlinePaintBrush className="w-5 h-5" />,
+    // },
+    // {
+    //   id: "design",
+    //   icon: <HiOutlineSparkles className="w-5 h-5" />,
+    // },
     {
       id: "contact",
       icon: <HiOutlineEnvelope className="w-5 h-5" />,

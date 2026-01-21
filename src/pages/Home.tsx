@@ -17,8 +17,8 @@ import { interests } from "../data/interests";
 import { languages } from "../data/languages";
 import { heroTexts } from "../data/heroTexts";
 import { projects } from "../data/projects";
-import { artPieces } from "../data/art";
-import { designPieces } from "../data/designs";
+// import { artPieces } from "../data/art";
+// import { designPieces } from "../data/designs";
 import {
   HiOutlineBriefcase,
   HiOutlineHeart,
@@ -776,8 +776,8 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
-      <ArtSection />
-      <DesignSection />
+      {/* <ArtSection /> */}
+      {/* <DesignSection /> */}
       <Contact />
     </>
   );
